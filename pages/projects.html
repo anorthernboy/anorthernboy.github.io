@@ -15,10 +15,8 @@
 
   <link rel="stylesheet" href="../style/style.css">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon.png" type="image/png">
 
   <title>projects</title>
 
@@ -26,6 +24,11 @@
 
     function reload() {
       var perfEntries = performance.getEntriesByType("navigation");
+
+      if (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // “Fear is the path to the Dark Side" - Yoda
+      }
 
       if (perfEntries[0].type === "back_forward" || perfEntries[0].type === "reload") {
         // location.reload(true);
