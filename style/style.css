@@ -59,8 +59,12 @@
   animation: 1.0s ease-out 0s 1 slideInFromBottom;
 }
 
-.projects-slide {
+.studies-slide {
   animation: 1.2s ease-out 0s 1 slideInFromBottom;
+}
+
+.projects-slide {
+  animation: 1.4s ease-out 0s 1 slideInFromBottom;
 }
 
 .first-section-slide {
