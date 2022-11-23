@@ -87,7 +87,8 @@
           </a>
           
            <a class="nav-button" href="studies.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
+            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;"
+              onMouseOver="studiesShapeOver()" onMouseOut="studiesShapeOut()">
             <span>
               studies
             </span>
@@ -168,7 +169,7 @@
 
       </div>
 
-      <div id="projects" class="col-12 column-twelve projects-slide"
+      <div id="studies" class="col-12 column-twelve projects-slide"
         style="border: 1px solid #333333; margin: 5px; height: 25vh; max-width: 1030px; padding: 0px; overflow: hidden; position: relative;"
         onMouseOver="projectsShapeOver()" onMouseOut="projectsShapeOut()">
 
@@ -176,37 +177,37 @@
           <span style="position: absolute; width:100%; height:100%; top:0; left: 0; z-index: 1;"></span>
         </a>
 
-        <div id="projects-title" style="font-size: 1.5rem; font-weight: 200; position: relative; top: 1%; left: 1%;">
+        <div id="studies-title" style="font-size: 1.5rem; font-weight: 200; position: relative; top: 1%; left: 1%;">
           studies
         </div>
 
-        <div id="projects-shape-one"
+        <div id="studies-shape-one"
           style="border-top: 1px solid #333333; margin: 0; height: 1px; width: 1000vh; position: absolute; top: 30%; left: 55%; transform-origin: 0 100%; transform: rotate(90deg)">
         </div>
 
-        <div id="projects-shape-two"
+        <div id="studies-shape-two"
           style="border-top: 1px solid #333333; margin: 0; height: 1px; width: 1000vh; position: absolute; top: 30%; left: 55%; transform-origin: 0 100%; transform: rotate(30deg)">
         </div>
 
-        <div id="projects-line"
+        <div id="studies-line"
           style="border-left: 1px solid #333333; margin: 0; height: 1000vh; width: 1px; position: absolute; top: -10%; left: 40%;">
         </div>
 
       </div>
-      
-      <div id="about" class="col-12 column-twelve about-slide"
+
+      <div id="projects" class="col-12 column-twelve about-slide"
         style="border: 1px solid #333333; margin: 5px; height: 25vh; max-width: 1030px; padding: 0px; overflow: hidden; position: relative;"
-        onMouseOver="aboutShapeOver()" onMouseOut="aboutShapeOut()">
+        onMouseOver="projectsShapeOver()" onMouseOut="projectsShapeOut()">
 
         <a href="./pages/projects.html">
           <span style="position: absolute; width:100%; height:100%; top:0; left: 0; z-index: 1;"></span>
         </a>
 
-        <div id="about-title" style="font-size: 1.5rem; font-weight: 200; position: relative; top: 1%; left: 1%;">
+        <div id="projects-title" style="font-size: 1.5rem; font-weight: 200; position: relative; top: 1%; left: 1%;">
           projects
         </div>
 
-        <div id="about-shape"
+        <div id="projects-shape"
           style="border: 1px solid #333333; margin: 0; height: 50vh; width: 50vh; position: relative; top: 1%; left: 70%;">
         </div>
 
@@ -214,7 +215,7 @@
           style="border-left: 1px solid #333333; margin: 0; height: 1000vh; width: 1px; position: absolute; top: 40%; left: 85%;">
         </div> -->
 
-        <div id="about-line"
+        <div id="projects-line"
           style="border-top: 1px solid #333333; margin: 0; height: 1px; width: 1000vh; position: absolute; top: -10%; left: 70%; transform-origin: 0 100%; transform: rotate(150deg)">
         </div>
 
@@ -291,21 +292,57 @@
       document.getElementById("work").style.backgroundColor = '#fafafa'
     }
 
-    function projectsShapeOver() {
+    function studiesShapeOver() {
+      document.getElementById("studies-title").style.left = "65%"
+      document.getElementById("studies-title").style.top = "55%"
+      document.getElementById("studies-title").style.transition = "all 0.5s ease-out"
+
+      document.getElementById("studies-shape-one").style.left = "10%"
+      document.getElementById("studies-shape-one").style.top = "5%"
+      document.getElementById("studies-shape-one").style.transition = "all 0.5s ease-out"
+
+      document.getElementById("studies-shape-two").style.left = "10%"
+      document.getElementById("studies-shape-two").style.top = "5%"
+      document.getElementById("studies-shape-two").style.transition = "all 0.5s ease-out"
+
+      document.getElementById("studies-line").style.left = "90%"
+      document.getElementById("studies-line").style.top = "-50%"
+      document.getElementById("studies-line").style.transition = "all 0.5s ease-out"
+
+      document.getElementById("studies").style.backgroundColor = '#f2f2f2'
+    }
+
+    function studiesShapeOut() {
+      document.getElementById("studies-title").style.left = "1%"
+      document.getElementById("studies-title").style.top = "1%"
+      document.getElementById("studies-title").style.transition = "all 0.5s ease-out"
+
+      document.getElementById("studies-shape-one").style.left = "55%"
+      document.getElementById("studies-shape-one").style.top = "30%"
+      document.getElementById("studies-shape-one").style.transition = "all 0.5s ease-out"
+
+      document.getElementById("studies-shape-two").style.left = "55%"
+      document.getElementById("studies-shape-two").style.top = "30%"
+      document.getElementById("studies-shape-two").style.transition = "all 0.5s ease-out"
+
+      document.getElementById("studies-line").style.left = "40%"
+      document.getElementById("studies-line").style.top = "-10%"
+      document.getElementById("studies-line").style.transition = "all 0.5s ease-out"
+
+      document.getElementById("studies").style.backgroundColor = '#fafafa'
+    }
+    
+        function projectsShapeOver() {
       document.getElementById("projects-title").style.left = "65%"
       document.getElementById("projects-title").style.top = "55%"
       document.getElementById("projects-title").style.transition = "all 0.5s ease-out"
 
-      document.getElementById("projects-shape-one").style.left = "10%"
-      document.getElementById("projects-shape-one").style.top = "5%"
-      document.getElementById("projects-shape-one").style.transition = "all 0.5s ease-out"
+      document.getElementById("projects-shape").style.left = "-20%"
+      document.getElementById("projects-shape").style.top = "40%"
+      document.getElementById("projects-shape").style.transition = "all 0.5s ease-out"
 
-      document.getElementById("projects-shape-two").style.left = "10%"
-      document.getElementById("projects-shape-two").style.top = "5%"
-      document.getElementById("projects-shape-two").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("projects-line").style.left = "90%"
-      document.getElementById("projects-line").style.top = "-50%"
+      document.getElementById("projects-line").style.left = "60%"
+      document.getElementById("projects-line").style.top = "-70%"
       document.getElementById("projects-line").style.transition = "all 0.5s ease-out"
 
       document.getElementById("projects").style.backgroundColor = '#f2f2f2'
@@ -316,16 +353,12 @@
       document.getElementById("projects-title").style.top = "1%"
       document.getElementById("projects-title").style.transition = "all 0.5s ease-out"
 
-      document.getElementById("projects-shape-one").style.left = "55%"
-      document.getElementById("projects-shape-one").style.top = "30%"
-      document.getElementById("projects-shape-one").style.transition = "all 0.5s ease-out"
+      document.getElementById("projects-shape").style.left = "70%"
+      document.getElementById("projects-shape").style.top = "1%"
+      document.getElementById("projects-shape").style.transition = "all 0.5s ease-out"
 
-      document.getElementById("projects-shape-two").style.left = "55%"
-      document.getElementById("projects-shape-two").style.top = "30%"
-      document.getElementById("projects-shape-two").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("projects-line").style.left = "40%"
-      document.getElementById("projects-line").style.top = "-10%"
+      document.getElementById("projects-line").style.left = "70%"
+      document.getElementById("projects-line").style.top = "-1%"
       document.getElementById("projects-line").style.transition = "all 0.5s ease-out"
 
       document.getElementById("projects").style.backgroundColor = '#fafafa'
