@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style/style.css">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon.png" type="image/png">
+
+  <title>projects</title>
+
+  <script>
+
+    function reload() {
+      var perfEntries = performance.getEntriesByType("navigation");
+
+      if (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // “Fear is the path to the Dark Side" - Yoda
+      }
+
+      if (perfEntries[0].type === "back_forward" || perfEntries[0].type === "reload") {
+        // location.reload(true);
+        window.scroll(0, 0);
+      }
+    }
+
+  </script>
+
+</head>
+
+<body onload="reload()"
+  style="font-family: 'Open Sans', sans-serif; text-decoration: none; color: #333333; background-color: #FAFAFA">
+
+  <!--<div class="animation-screen"></div>-->
+
+  <div class="container nav-container"
+    style="position: sticky;
+        top: 0px; background-color: #FAFAFA; z-index: 9999; margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="nav-overview" class="col-12 column-twelve"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; ">
+
+        <div id="nav-overview-content">
+
+          <a href="../" style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #333333;">
+            <div>
+              a northern boy
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div id="nav-summary" class="col-12 column-twelve"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; ">
+
+        <div id="nav-summary-content">
+
+          <a class="nav-button" href="about.html"
+            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
+            <span>
+              about
+            </span>
+          </a>
+
+          <a class="nav-button" href="work.html"
+            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
+            <span>
+              work
+            </span>
+          </a>
+          
+          <a class="nav-button" href="studies.html"
+            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
+            <span>
+              studies
+            </span>
+          </a>
+
+          <a class="nav-button" href="projects.html"
+            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #333333;">
+            <span>
+              projects
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <div class="container body-container hoptions first-section-slide"
+    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="hoptions-image" class="col-lg-7 order-lg-2"
+        style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
+
+        <div id="hoptions-image-content"
+          style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
+          <img class="product-image" src="../assets/hoptions.png" alt="hoptions">
+        </div>
+
+      </div>
+
+      <div id="hoptions-title" class="col-lg-3 order-lg-1 top-border"
+        style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
+        <br>
+
+        <div id="hoptions-title-content" style="font-size: 1.5rem; font-weight: 200">
+          hoptions
+        </div>
+
+        <img class="swatch-vertical" src="../assets/hoptions-swatch-2x.png" alt="hoptions colour swatch vertical">
+
+        <img class="swatch-horizontal" src="../assets/hoptions-swatch-horizontal-2x.png"
+          alt="hoptions colour swatch horizontal">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container text-container hoptions second-section-slide"
+    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row text-container-row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
+
+
+      <div id="hoptions-overview" class="col-lg-3 text-container-col"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
+
+        <div id="hoptions-overview-content" style="position: relative;">
+          <!-- <br> -->
+
+          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
+            Removing barriers to the very best craft beer using mobile image recognition technology
+          </p>
+
+          <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
+            <span class="role-skill">UI/UX</span>
+            <span class="text-divide">|</span>
+            <span class="role-skill">React Native</span>
+            <span class="text-divide">|</span>
+            <span class="role-skill">GraphQL</span>
+          </p>
+
+        </div>
+
+      </div>
+
+      <div id="hoptions-summary" class="col-lg-7"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
+
+        <div id="hoptions-summary-content">
+          <!-- <br> -->
+
+          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
+            Hoptions is a solution developed to address the problem of decision fatigue in the experience of purchasing
+            and
+            consuming craft beer. User research identified the emotions experienced by the consumer:
+            overwhelming
+            choice, a desire to try something, before settling for a known beer.
+            <br><br>
+            Hoptions' recommendation algorithm and image recognition technology finds new beers based on
+            user
+            preferences. Users can filter recommendations by brewery, category - even hops type. Share user profile
+            with
+            friends to build
+            the perfect <span style="font-style: italic;">round of beers</span>. See the
+            MVP in action <a href="hoptions.html"
+              style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container body-container seemless third-section-slide"
+    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="seemless-image" class="col-lg-7 order-lg-2"
+        style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
+
+        <div id="seemless-image-content"
+          style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
+          <img class="product-image" src="../assets/seemless.png" alt="seemless">
+        </div>
+
+      </div>
+
+      <div id="seemless-title" class="col-lg-3 order-lg-1 top-border"
+        style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
+        <br>
+
+        <div id="seemless-title-content" style="font-size: 1.5rem; font-weight: 200">
+          seemless
+        </div>
+
+        <img class="swatch-vertical" src="../assets/seemless-swatch-2x.png" alt="seemless colour swatch vertical">
+
+        <img class="swatch-horizontal" src="../assets/seemless-swatch-horizontal-2x.png"
+          alt="seemless colour swatch horizontal">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container text-container seemless third-section-slide"
+    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row text-container-row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
+
+
+      <div id="seemless-overview" class="col-lg-3 text-container-col"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
+
+        <div id="seemless-overview-content" style="position: relative;">
+          <!-- <br> -->
+
+          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
+            Disrupting inefficiencies within the fashion industry for a more sustainable future
+          </p>
+
+          <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
+            <span class="role-skill">UI/UX</span>
+            <span class="text-divide">|</span>
+            <span class="role-skill">Branding</span>
+            <span class="text-divide">|</span>
+            <span class="role-skill">Concept Design</span>
+          </p>
+
+        </div>
+
+      </div>
+
+      <div id="seemless-summary" class="col-lg-7"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
+
+        <div id="seemless-summary-content">
+          <!-- <br> -->
+
+          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
+            seemless is a proof-of-concept project addressing overproduction in the fashion
+            industry [<span style="font-style: italic;">reduce</span>,
+            reuse, recycle]. Research suggests that the profitable production of fabric requires over-commitment from
+            either consumer or producer in order to reach minimum production runs.
+            <br><br>
+            By crowdsourcing fabric speculative production is reduced. Independent
+            designers can pool resource to access economies of scale and small
+            producers can access a
+            large consumer market for sustainable products. View the value proposition landing page <a
+              href="seemless.html"
+              style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container body-container spotify fourth-section-slide"
+    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="spotify-image" class="col-lg-7 order-lg-2"
+        style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
+
+        <div id="spotify-image-content"
+          style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
+          <img class="product-image" src="../assets/spotify.png" alt="spotify">
+        </div>
+
+      </div>
+
+      <div id="spotify-title" class="col-lg-3 order-lg-1 top-border"
+        style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
+        <br>
+
+        <div id="spotify-title-content" style="font-size: 1.5rem; font-weight: 200">
+          spotify
+        </div>
+
+        <img class="swatch-vertical" src="../assets/spotify-swatch-2x.png" alt="spotify colour swatch vertical">
+
+        <img class="swatch-horizontal" src="../assets/spotify-swatch-horizontal-2x.png"
+          alt="spotify colour swatch horizontal">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container text-container spotify fourth-section-slide"
+    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row text-container-row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
+
+
+      <div id="spotify-overview" class="col-lg-3 text-container-col"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
+
+        <div id="spotify-overview-content" style="position: relative;">
+          <!-- <br> -->
+
+          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
+            Exploring recommendation algorithms in Spotify from an opiniated users perspective
+          </p>
+
+          <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
+            <span class="role-skill">UI/UX</span>
+            <span class="text-divide">|</span>
+            <span class="role-skill">Clustering</span>
+            <span class="text-divide">|</span>
+            <span class="role-skill">Design Thinking</span>
+          </p>
+
+        </div>
+
+      </div>
+
+      <div id="spotify-summary" class="col-lg-7"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
+
+        <div id="spotify-summary-content">
+          <!-- <br> -->
+
+          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
+            An investigation into Spotify recommendations using the statistical analysis technique
+            k-means
+            clustering. My hypothesis posits there is a heavy weighting toward popularity in the
+            app which results in a failure to handle artist complexity and disappoints a defined user persona.
+            <br><br>
+            Using the Spotify API, I found that my own playlists were much more <span
+              style="font-style: italic;">sonically consistent</span>: similarity within tracks rather than artists. I
+            used the findings to
+            propose a
+            feature whereby the user can adjust the recommendation engine. Find out more about the proposal <a
+              href="spotify.html"
+              style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container body-container rams fourth-section-slide"
+    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="rams-image" class="col-lg-7 order-lg-2"
+        style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
+
+        <div id="rams-image-content"
+          style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
+          <img class="product-image" src="../assets/rams.png" alt="rams">
+        </div>
+
+      </div>
+
+      <div id="rams-title" class="col-lg-3 order-lg-1 top-border"
+        style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
+        <br>
+
+        <div id="rams-title-content" style="font-size: 1.5rem; font-weight: 200">
+          rams
+        </div>
+
+        <img class="swatch-vertical" src="../assets/rams-swatch-2x.png" alt="rams colour swatch vertical">
+
+        <img class="swatch-horizontal" src="../assets/rams-swatch-horizontal-2x.png"
+          alt="rams colour swatch horizontal">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container text-container rams fourth-section-slide"
+    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row text-container-row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
+
+
+      <div id="rams-overview" class="col-lg-3 text-container-col"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
+
+        <div id="rams-overview-content" style="position: relative;">
+          <!-- <br> -->
+
+          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
+            Unashamedly demonstrating my uber-cool, minimalist design credentials with an app
+          </p>
+
+          <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
+            <span class="role-skill">UI/UX</span>
+            <span class="text-divide">|</span>
+            <span class="role-skill">React</span>
+            <span class="text-divide">|</span>
+            <span class="role-skill">HTML.CSS.JS</span>
+          </p>
+
+        </div>
+
+      </div>
+
+      <div id="rams-summary" class="col-lg-7" style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
+
+        <div id="rams-summary-content">
+          <!-- <br> -->
+
+          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
+            Rams is a playful project built as a single-page application which can be bookmarked on mobile for
+            native-like app functionality. A
+            clean frontend delivers thoughts and ideas from the greatest industrial designer of all time.
+            <br><br>
+            There has been no bigger influence on my own aesthetic and design sensibilities than Dieter Rams, and I
+            continue to reference his
+            principles for
+            good design daily. What better companion to a user-empathy and ideation session. Try out the application <a
+              href="https://the-wisdom-of-rams.netlify.app/" target="_blank" rel="noopener noreferrer"
+              style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  
+  
+  
+  <div class="container body-container rams fourth-section-slide"
+    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="rams-image" class="col-lg-7 order-lg-2"
+        style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
+
+        <div id="rams-image-content"
+          style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
+          <img class="product-image" src="../assets/gammawaves.png" alt="gammawaves">
+        </div>
+
+      </div>
+
+      <div id="rams-title" class="col-lg-3 order-lg-1 top-border"
+        style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
+        <br>
+
+        <div id="rams-title-content" style="font-size: 1.5rem; font-weight: 200">
+          gammawaves
+        </div>
+
+        <img class="swatch-vertical" src="../assets/gammawaves-swatch-2x.png" alt="gammawaves colour swatch vertical">
+
+        <img class="swatch-horizontal" src="../assets/gammawaves-swatch-horizontal-2x.png"
+          alt="gammawaves colour swatch horizontal">
+
+      </div>
+
+    </div>
+
+  </div>
+  
+  
+  <div class="container text-container rams fourth-section-slide"
+    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row text-container-row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
+
+
+      <div id="rams-overview" class="col-lg-3 text-container-col"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
+
+        <div id="rams-overview-content" style="position: relative;">
+          <!-- <br> -->
+
+          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
+            distorted, swirling, fuzz-washed shoegaze set to dreamy, psychedelic visual art
+          </p>
+
+          <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
+            <span class="role-skill">Recording</span>
+            <span class="text-divide">|</span>
+            <span class="role-skill">Production</span>
+            <span class="text-divide">|</span>
+            <span class="role-skill">Video</span>
+          </p>
+
+        </div>
+
+      </div>
+
+      <div id="rams-summary" class="col-lg-7" style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
+
+        <div id="rams-summary-content">
+          <!-- <br> -->
+
+          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
+            gammawaves is an ongoing audiovisual art project combining my passion for soaring, 
+            atmospheric guitars and hazy, abstract video. Custom tunings and a chain of effects pedals produce a torrent of noise to accompany dreamlike visuals.
+            <br><br>
+            From my youthful interest in trance music through my ongoing obsession with <span style="font-style: italic;">shoegaze</span>, I find myself drawn to the rush of euphoric, uplifting sounds.
+            I create short, looping films to communicate this feeling visually. Find out more about gammawaves <a
+              href="https://www.instagram.com/gammawaves_____/" target="_blank" rel="noopener noreferrer"
+              style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
