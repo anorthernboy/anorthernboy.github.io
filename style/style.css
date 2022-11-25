@@ -170,6 +170,12 @@
       width: 55px;
       margin: 1vmin 0;
     }
+
+  .swatch {
+      height: 10px;
+      width: 40px;
+      margin: 1vmin 0;
+    }
     
     .swatch-vertical {
       height: 40px;
