@@ -100,11 +100,11 @@
     filter: invert(70%);
 }
 
-.carousel .carousel-indicators li {
+.carousel-button {
     background-color: #707070;
 }
 
-.carousel .carousel-indicators li.active {
+.carousel-button:active {
     background-color: #333333;
 }
 
