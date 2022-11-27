@@ -97,11 +97,12 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(70%);
+    filter: invert(60%);
 }
 
 .carousel-indicators [data-bs-target] {
     background-color: #707070;
+    height: 2px;
 }
 
 .spinner-screen {
