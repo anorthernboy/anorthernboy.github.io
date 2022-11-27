@@ -100,14 +100,9 @@
     filter: invert(70%);
 }
 
-.carousel-button {
+.carousel-indicators [data-bs-target] {
     background-color: #707070;
 }
-
-.carousel-button:active {
-    background-color: #333333;
-}
-
 
 .spinner-screen {
   background-color: #FAFAFA;
