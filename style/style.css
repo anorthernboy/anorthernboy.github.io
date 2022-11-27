@@ -89,7 +89,7 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon,
-carousel-indicators {
+.carousel-indicators li {
     filter: invert(70%);
 }
 
