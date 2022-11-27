@@ -88,9 +88,16 @@
 }
 
 .carousel-control-prev-icon,
-.carousel-control-next-icon,
-.carousel .carousel-indicators li {
+.carousel-control-next-icon {
     filter: invert(70%);
+}
+
+.carousel .carousel-indicators li {
+    background-color: #707070;
+}
+
+.carousel .carousel-indicators li.active {
+    background-color: #333333;
 }
 
 
