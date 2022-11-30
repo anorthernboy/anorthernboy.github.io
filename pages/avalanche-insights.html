@@ -382,8 +382,15 @@ style="margin: 0px auto; display: flex; justify-content: center; align-items: fl
       Upload
       </p>
       
+      <p  style="font-size: 1rem; font-weight: 100; ">
+The purpose of our Beta platform was to showcase the proprietary data science we were building. As such, we were not initially addressing the stage of the user journey which covered designing and fielding a survey - that would continue to happen on other platforms.
+      </p>
+      
+      <p  style="font-size: 1rem; font-weight: 100;">
+This presented a somewhat challenging user experience problem. Although we were accepting data uploads from any survey platform - with their many small differences in data export structure - we were not going to invest heavily in engineering a solution (given limited resources).      </p>
+      
       <p  style="font-size: 1rem; font-weight: 100; margin-bottom: 0;">
-As a user, I want to upload survey data to the Avalanche Insights platform.
+Through a combination of user interviews and technical requirements I was able to generate a solution which offered as little friction as possible for the user while ensuring the uploaded data was accurately stored in our database schema. 
       </p>
 
     </div>
@@ -496,8 +503,15 @@ style="margin: 0px auto; display: flex; justify-content: center; align-items: fl
       Dashboard
       </p>
       
+      <p  style="font-size: 1rem; font-weight: 100;">
+A dashboard is a key element in most SaaS platforms, and Avalanche Insights was no exception. The output of the service-based consultancy work at Avalanche Insights was a deck which contained many static charts, which had been manually built in a BI tool. The successes of this product formed the basis of the SaaS dashboard.
+              </p>
+      
+      <p  style="font-size: 1rem; font-weight: 100;">
+Building from the Avalanche Insights consultancy deck - but crucially adding interaction for customer data exploration - I also performed an in depth review of other data visualization platforms and their key features.              </p>
+      
       <p  style="font-size: 1rem; font-weight: 100; margin-bottom: 0;">
-        As a user, I want to explore the analaysis of my survey data on the Avalanche Insights platform.
+With the developing user personas as reference, I created and tested many iterations of the dashboard and components. 
               </p>
 
     </div>
@@ -609,8 +623,7 @@ style="margin: 0px auto; display: flex; justify-content: center; align-items: fl
           </p>
           
           <p  style="font-size: 1rem; font-weight: 100; margin-bottom: 0;">
-            As a user, I want to segment my data using a demographic filter on the Avalanche Insights platform.
-                  </p>
+Basic segmentation is a key interactive feature when exploring data, and was described in most interviews as one of the first actions taken to drill down into large datasets. In the flow below, a user can quickly toggle between demographic questions to get an instant snapshot of theme distribution across basic segments.                  </p>
     
         </div>
     
@@ -720,8 +733,7 @@ style="margin: 0px auto; display: flex; justify-content: center; align-items: fl
           </p>
           
           <p  style="font-size: 1rem; font-weight: 100; margin-bottom: 0;">
-            As a user, I want to segment my data using a combination of demographic filters on the Avalanche Insights platform.
-                  </p>
+More advanced users described situations in their analysis process whereby they needed to drill down on a combination of attributes. This flow is a secondary action in the interface below, and during testing was intuitively found by users looking for additional segmentation functionality. The interaction draws on common patterns found in enterprise products.                  </p>
     
         </div>
     
@@ -838,9 +850,16 @@ style="margin: 0px auto; display: flex; justify-content: center; align-items: fl
           Data Visualization
           </p>
           
-          <p  style="font-size: 1rem; font-weight: 100; margin-bottom: 0;">
-            As a user, I want to explore different data visualizations on the Avalanche Insights platform.
+          <p  style="font-size: 1rem; font-weight: 100;">
+Data visualization provides many challenges in product design - from accessibility, responsive design, and what any given user is either trying to answer or trying to communicate with the visualization.
                   </p>
+          
+          <p  style="font-size: 1rem; font-weight: 100;">
+I addressed this complexity by completing a large number of concept tests on different visualizations - asking users both which chart they preferred and also asking the user to answer a question from the data available in the visualization.                 
+          </p>
+          
+          <p  style="font-size: 1rem; font-weight: 100; margin-bottom: 0;">
+The results from these concept tests, and higher fidelity testing with iterative designs resulted in the below visualizations on the platform.                  </p>
     
         </div>
     
@@ -962,9 +981,11 @@ style="margin: 0px auto; display: flex; justify-content: center; align-items: fl
       Sharing
       </p>
       
+      <p  style="font-size: 1rem; font-weight: 100;">
+During discovery interviews, one of the most consistent concepts discussed by users was the idea that a survey isn’t just conducted for its own sake - almost always there is a requirement to report findings to one or many different stakeholders at the end of the project.              </p>
+      
       <p  style="font-size: 1rem; font-weight: 100; margin-bottom: 0;">
-        As a user, I want to share my survey analysis across my organization.
-              </p>
+Sharing functionality within the platform allows users to centralize the findings, and create bespoke report pages for different stakeholders - inviting the stakeholder to the platform or sending a report via email. Crucially, the data can be curated for each audience - ensuring the language used to express, for example, a theme, is consistent with the language used within the company culture.              </p>
 
     </div>
 
@@ -1074,8 +1095,12 @@ style="margin: 0px auto; display: flex; justify-content: center; align-items: fl
               Admin Menu
               </p>
               
+              <p  style="font-size: 1rem; font-weight: 100;">
+Admin settings are key infrastructure for any SaaS platform. Primarily in the management of users and data. During the early discovery phase of user interviews, there were a lot of conversations around personal data, and data collection for the sake of data collection. This was amplified somewhat by the fact that the user already had data stored on a survey platform, and was required to bring it to the Avalanche Insights platform.
+                      </p>
+              
               <p  style="font-size: 1rem; font-weight: 100; margin-bottom: 0;">
-                As a user, I want to manage access to survey data on the Avalanche Insights platform.
+In order to remedy some major user concerns, we developed robust access controls and I created a simple and clean admin menu for the management of permissions. 
                       </p>
         
             </div>
