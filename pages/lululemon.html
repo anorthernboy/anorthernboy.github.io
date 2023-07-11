@@ -1,0 +1,1737 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style/style.css">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon.png" type="image/png">
+
+  <title>arc'teryx</title>
+
+  <script>
+
+    function reload() {
+      var perfEntries = performance.getEntriesByType("navigation");
+
+      if (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // “Fear is the path to the Dark Side" - Yoda
+      }
+
+      if (perfEntries[0].type === "back_forward" || perfEntries[0].type === "reload") {
+        // location.reload(true);
+        window.scroll(0, 0);
+      }
+    }
+
+  </script>
+
+</head>
+
+
+
+<body onload="reload()"
+  style="font-family: 'Open Sans', sans-serif; text-decoration: none; color: #333333; background-color: #FAFAFA">
+
+
+
+  <div class="container nav-container"
+    style="position: sticky;
+        top: 0px; background-color: #FAFAFA; z-index: 9999; margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="nav-overview" class="col-12 column-twelve"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; ">
+
+        <div id="nav-overview-content">
+
+          <a href="../" style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #333333;">
+            <div>
+              a northern boy
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div id="nav-summary" class="col-12 column-twelve"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; ">
+
+        <div id="nav-summary-content">
+
+          <a class="nav-button" href="projects.html"
+            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
+            <span>
+              back to projects
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <div class="container project-text first-section-slide"
+    style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="nav-overview" class="col-12 column-twelve"
+        style="border-top: 1px solid #333333; margin: 15px 15px 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flex-start; align-items: center;">
+
+        <div id="spotify-summary-content" style="padding-top: 5vmin;">
+          <!-- <br> -->
+
+          <p style="font-size: 2.0rem; font-weight: 200; text-decoration: none; color: #333333;">
+            lululemon product recommendations </p>
+            
+            
+
+          <p style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #333333;">
+            Analysis of development opportunities in ecommerce recommendations to create an inspiring end-to-end outfitting ecosystem
+          </p>
+          
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="container project-text second-section-slide"
+    style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="nav-overview" class="col-12 column-twelve"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+        <div id="spotify-summary-content">
+          <!-- <br> -->
+
+          <p style="font-size: 1.25rem; font-weight: 200; text-decoration: none; color: #333333;">
+            Overview
+          </p>
+
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            lululemon is a yoga-inspired technical apparel company and is highly regarded for its innovative products, especially in the realm of yoga and fitness wear. The lululemon product line includes various types of athletic apparel, including running gear, gym wear, and casual clothing. Their products are designed with functionality and comfort in mind, often featuring technical fabrics, moisture-wicking properties, and thoughtful design details. The company has gained a loyal customer base, particularly among yoga enthusiasts and fitness-conscious individuals.
+
+          </p>
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            lululemon emphasises a healthy and active lifestyle, and their brand is often associated with wellness, mindfulness, and athletic performance. They have a strong focus on community engagement and often organise events, classes, and workshops to promote fitness and well-being.
+          </p>
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            As is common within ecommerce, lululemon utilises product recommendations to expose guests to a wider range of products, allowing them to discover new items that align with their preferences. Within the lululemon ecommerce platform recommendations are most immediate within the product page, whereby similar products are displayed in a section titled ‘You may also like.’ This implementation of product recommendations is an established pattern across ecommerce and is ripe for disruption.
+          </p>
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            lululemon has the opportunity to create a distinct and compelling digital experience that provides guests with relevant head-to-toe look recommendations that are inspiring and educational. By reimagining ecommerce recommendations, lululemon can provide a more personalised and engaging experience for their guests, setting themselves apart in a crowded market.
+
+          </p>
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            lululemon has a reputation for fostering an innovative culture. They have a track record of pushing boundaries and embracing new technologies and ideas. By reimagining ecommerce recommendations, lululemon can leverage their innovative mindset to create unique and compelling features that elevate the online shopping experience. This aligns with their brand identity and positions them as a leader in the industry.
+
+          </p>
+
+          
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+          <div class="container project-container third-section-slide"
+            style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+            <div class="row"
+              style="width: 100%; max-width: 1200px; margin: 0 15px 15px 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+              <div id="nav-overview" class="col-12 column-twelve"
+                style="margin: 15px 15px 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flex-start; align-items: center;">
+
+
+
+
+                <div id="carouselTE0" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000" style="overflow: hidden !important; padding-bottom: 4rem !important;">
+
+                  <div class="carousel-indicators" style="bottom: 2rem !important;">
+                    <button type="button" data-bs-target="#carouselTE0" data-bs-slide-to="0"
+                      class="active indicator-button"></button>
+                    <button type="button" data-bs-target="#carouselTE0" data-bs-slide-to="1"
+                      class="indicator-button"></button>
+                    <button type="button" data-bs-target="#carouselTE0" data-bs-slide-to="2"
+                      class="indicator-button"></button>
+                    <button type="button" data-bs-target="#carouselTE0" data-bs-slide-to="3"
+                      class="indicator-button"></button>
+                    <button type="button" data-bs-target="#carouselTE0" data-bs-slide-to="4"
+                      class="indicator-button"></button>
+                  </div>
+
+                  <div class="carousel-inner" style="overflow: visible !important;">
+
+                    <div class="carousel-item active">
+                      <img class="d-block w-100"
+                        style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                        src="../assets/arcteryx-1.png" alt="First slide">
+
+                      <!--
+       <div class="carousel-caption d-none d-md-block">
+          <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+            Social Facilities Center
+              <br>
+            <span style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+            University Campus
+            </span>
+         </p>
+       </div>
+       -->
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                      <img class="d-block w-100"
+                        style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                        src="../assets/arcteryx-2.png" alt="Second slide">
+
+                      <!--
+       <div class="carousel-caption d-none d-md-block">
+          <h5>Anastasios G. Leventis</h5>
+          <p>University House</p>
+       </div>
+-->
+
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100"
+                        style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                        src="../assets/arcteryx-3.png" alt="Third slide">
+
+                      <!--
+       <div class="carousel-caption d-none d-md-block">
+         <h5>Faculty of Engineering</h5>
+         <p>University Campus</p>
+      </div>
+      -->
+
+                    </div>
+
+                    <div class="carousel-item">
+                      <img class="d-block w-100"
+                        style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                        src="../assets/arcteryx-4.png" alt="Fourth slide">
+
+                      <!--
+       <div class="carousel-caption d-none d-md-block">
+         <h5>Faculty of Engineering</h5>
+         <p>University Campus</p>
+      </div>
+      -->
+
+                    </div>
+
+                    <div class="carousel-item">
+                      <img class="d-block w-100"
+                        style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                        src="../assets/arcteryx-5.png" alt="Fifth slide">
+
+                      <!--
+       <div class="carousel-caption d-none d-md-block">
+         <h5>Faculty of Engineering</h5>
+         <p>University Campus</p>
+      </div>
+      -->
+
+
+                    </div>
+
+
+                  </div>
+
+                  <button class="carousel-control-prev" data-bs-target="#carouselTE0" type="button" data-bs-slide="prev" style="bottom: 4rem !important;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+
+                  <button class="carousel-control-next" data-bs-target="#carouselTE0" type="button" data-bs-slide="next" style="bottom: 4rem !important;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <br>
+
+
+
+  <div class="container project-text fourth-section-slide"
+    style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="nav-overview" class="col-12 column-twelve"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+        <div id="spotify-summary-content">
+          <!-- <br> -->
+
+          <p style="font-size: 1.25rem; font-weight: 200; text-decoration: none; color: #333333;">
+            Product Recommendations
+          </p>
+
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            After ruminating on the problem for some time I realised there is a need to separate two main concepts contributing to the recommendation function.
+            
+          </p>
+
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            First of all there is the recommender system, the algorithm(s) dictating which products are recommended. There are a number of different recommender systems available such as collaborative recommender systems (those that make suggestions made to a user based on other users' preferences), content filtering (those that suggest products according to the similarity of the items), demographics based (taking into account factors such as age, gender, location, and interests when making recommendations), or a hybrid system of collaborative and content based filtering. Each of these technical implementations have their advantages and disadvantages in different ecommerce settings. The second concept is the actual user experience of recommendations - when, where, and how are recommended products presented to the user? What action can the user take with recommended products?
+
+          </p>
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            As a product designer attempting to explore this ecommerce feature, I have no direct influence on the recommender system, 
+            but I can directly influence the user experience. In order to make a distinction between the two concepts it is 
+            helpful to reframe the algorithm(s) as <span style="font-style:italic;">product recommendation</span> and the user experience as <span style="font-style:italic;">product discovery</span>.
+            
+          </p>
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            In directly addressing the problem of product discovery our ideas and solutions can explore what it means to enable customers to shop across a digital ecosystem which attempts to incorporate the immersive, branded, in store shopping experience - thus creating a true omnichannel retail experience.            
+
+          </p>  
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="container project-container third-section-slide"
+  style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div class="row"
+    style="width: 100%; max-width: 1200px; margin: 0 15px 15px 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div id="nav-overview" class="col-12 column-twelve"
+      style="margin: 15px 15px 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flex-start; align-items: center;">
+
+
+
+
+      <div id="carouselTE1" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000" style="overflow: hidden !important; padding-bottom: 14rem !important;">
+
+        <div class="carousel-indicators" style="bottom: 12rem !important;">
+          <button type="button" data-bs-target="#carouselTE1" data-bs-slide-to="0"
+            class="active indicator-button"></button>
+          <button type="button" data-bs-target="#carouselTE1" data-bs-slide-to="1"
+            class="indicator-button"></button>
+          <button type="button" data-bs-target="#carouselTE1" data-bs-slide-to="2"
+            class="indicator-button"></button>
+            <button type="button" data-bs-target="#carouselTE1" data-bs-slide-to="3"
+            class="indicator-button"></button>
+          
+        </div>
+
+        <div class="carousel-inner" style="overflow: visible !important;">
+
+          <div class="carousel-item active">
+            <img class="d-block w-100"
+              style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+              src="../assets/primary-cta.png" alt="First slide">
+
+            
+<div class="carousel-caption " style="top: 100% !important; padding-top: 3rem;">
+<!--<p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+  Primary CTA
+</p>
+  <p style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+    The primary call-to-action (CTA) is taking the user to the product page, and ultimately further along the user 
+    journey map toward the ultimate goal of completing a purchase. The CTA is also sticky, 
+    so the user always has access to this even when scrolling through the comparison.
+  </p>-->
+
+  <p style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+    The primary call-to-action (CTA) takes the user to the product page, further along the user journey toward 
+    completing a purchase. The CTA is sticky, so the user has access even when scrolling.
+  </p>
+
+</div>
+
+
+          </div>
+
+          <div class="carousel-item">
+
+            <img class="d-block w-100"
+              style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+              src="../assets/aligned-content.png" alt="Second slide">
+
+              <div class="carousel-caption " style="top: 100% !important; padding-top: 3rem;">
+                <!--<p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333">
+                  Content Alignment and Hover Interaction
+                </p>
+                    
+                  <p style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+                    All products display the same section headers (e.g. Full Product Features) and - importantly - the same 
+                    subsection headers (e.g. Collar Configuration) even when some products within the 
+                    comparison are returning an empty state for the subsection. This ensures comparable information is always directly inline horizontally across the comparison.         There is a really useful hover interaction which subtly highlights the subsection row for all products, focusing the users attention on the key information.   
+
+                  </p>-->
+
+                  <p style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+                    All products display the same section and subsection headers even when some products return an empty
+                    state. This ensures comparable information is always directly inline across the comparison.
+                  </p>
+                
+                </div>
+
+          </div>
+
+
+          <div class="carousel-item">
+
+            <img class="d-block w-100"
+              style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+              src="../assets/on-hover.png" alt="Second slide">
+
+              <div class="carousel-caption " style="top: 100% !important; padding-top: 3rem;">
+                <!--<p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333">
+                  CHover Interaction
+                </p>-->
+                  
+                  <p style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+                    There is a really useful hover interaction which subtly highlights the subsection row for all products,
+                    focusing the users attention on the key information.   
+
+                  </p>
+                
+                </div>
+
+          </div>
+
+
+          <div class="carousel-item">
+            <img class="d-block w-100"
+              style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+              src="../assets/collapse-section.png" alt="Third slide">
+
+              <div class="carousel-caption " style="top: 100% !important; padding-top: 3rem;">
+                <!--<p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+                  Collapsible Content
+                </p>
+                  
+                  <p style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+                    Each main section is also collapsible, again allowing the user to quickly focus on their own 
+                    comparison requirements - whether that be general product information, key features, or the 
+                    materials and garment care instructions.
+
+                  </p>-->
+
+                  <p style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+                    Each main section is collapsible, allowing the user to quickly focus on their own comparison 
+                    requirements - whether that be product information, key features, or materials and garment care.
+
+                  </p>
+                
+                </div>
+
+          </div>
+
+          
+
+
+
+
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#carouselTE1" type="button" data-bs-slide="prev" style="bottom: 14rem !important;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" data-bs-target="#carouselTE1" type="button" data-bs-slide="next" style="bottom: 14rem !important;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+
+
+<!--
+
+  <div class="container project-text fourth-section-slide"
+    style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="nav-overview" class="col-12 column-twelve"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flext-start; align-items: center;">
+
+        <div id="spotify-summary-content">
+          
+
+          <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+            Primary CTA
+          </p>
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            The primary call-to-action (CTA) is taking the user to the product page, and ultimately further along the user journey map toward the ultimate goal of completing a purchase. The CTA is also sticky, so the user always has access to this even when scrolling through the comparison.
+
+          </p>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  
+
+<div class="container project-container fourth-section-slide"
+  style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div class="row"
+    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div id="nav-overview" class="col-12 column-twelve"
+      style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+      <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+        <img src="../assets/primary-cta.png" alt="primary cta" width="100%">
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+<br><br>
+
+
+
+<div class="container project-text fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flext-start; align-items: center;">
+
+    <div id="spotify-summary-content">
+
+      <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+        Content Alignment
+      </p>
+
+      <p style="font-size: 1rem; font-weight: 100;">
+        All products display the same section headers (e.g. Full Product Features) and - importantly - the same subsection headers (e.g. Collar Configuration) even when some products within the comparison are returning an empty state for the subsection. This ensures comparable information is always directly inline horizontally across the comparison.
+      </p>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+<div id="nav-overview" class="col-12 column-twelve"
+  style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+  <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+    <img src="../assets/aligned-content.png" alt="aligned content" width="100%">
+  </div>
+
+
+</div>
+
+</div>
+
+</div>
+<br><br>
+
+
+<div class="container project-text fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flext-start; align-items: center;">
+
+    <div id="spotify-summary-content">
+
+      <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+        Hover Interaction
+      </p>
+
+      <p style="font-size: 1rem; font-weight: 100;">
+        There is a really useful hover interaction which subtly highlights the subsection row for all products, focusing the users attention on the key information.      </p>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+<div id="nav-overview" class="col-12 column-twelve"
+  style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+  <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+    <img src="../assets/on-hover.png" alt="on hover" width="100%">
+  </div>
+
+
+</div>
+
+</div>
+
+</div>
+<br><br>
+
+
+<div class="container project-text fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flext-start; align-items: center;">
+
+    <div id="spotify-summary-content">
+
+      <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+        Collapsible Content
+      </p>
+
+      <p style="font-size: 1rem; font-weight: 100;">
+        Each main section is also collapsible, again allowing the user to quickly focus on their own comparison requirements - whether that be general product information, key features, or the materials and garment care instructions.
+
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+<div id="nav-overview" class="col-12 column-twelve"
+  style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+  <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+    <img src="../assets/collapse-section.png" alt="collapse section" width="100%">
+  </div>
+
+
+</div>
+
+</div>
+
+</div>
+<br><br>
+
+-->
+
+
+<div class="container project-text fourth-section-slide"
+    style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div class="row"
+      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+      <div id="nav-overview" class="col-12 column-twelve"
+        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+        <div id="spotify-summary-content">
+          <!-- <br> -->
+
+          <p style="font-size: 1.25rem; font-weight: 200; text-decoration: none; color: #333333;">
+            Problem
+          </p>
+
+
+          <p style="font-size: 1rem; font-weight: 100;">
+Certain design patterns within ecommerce have become widely adopted and have remained relatively consistent over the past couple of decades, it is important to consider various factors that may have contributed to this phenomenon.
+
+          </p>
+
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            The design patterns that emerged in ecommerce were influenced by the technological capabilities and limitations of the time. Computational power, bandwidth constraints, desktop-centric experiences, and simplified interfaces shaped the initial design patterns.
+            
+                      </p>
+
+
+                      <p style="font-size: 1rem; font-weight: 100;">
+                        This created an ecommerce experience whereby a group of products is generally presented on a grid, filtering is rudimentary and can lack context, and the exploration of a single product navigates to a page presenting the product in isolation. It can be a joyless and functional experience.
+                        
+                                  </p>
+
+
+                                  <p style="font-size: 1rem; font-weight: 100;">
+                                    Furthermore, according to Jakob's Law, proposed by usability expert Jakob Nielsen:
+                        
+                                  </p>
+
+
+          <p style="font-size: 1rem; font-weight: 100; margin: 0 1rem 0 1rem;">
+            “Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know”
+
+            
+          </p>
+          <br>
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            This principle emphasises the importance of adhering to established design patterns to ensure familiarity and ease of use for users. While adhering to these patterns can provide a sense of consistency and familiarity for users, it is crucial to recognize that design patterns should not be seen as fixed limitations. They are intended as guidelines to enhance usability and provide a framework for effective user experiences. Designers and developers have the flexibility to iterate, improve, and even challenge these patterns to drive innovation and address evolving user needs. Designers and organisations must balance the need for familiarity and usability with the exploration of innovative approaches that can enhance the ecommerce experience.
+
+          </p>
+
+          <p style="font-size: 1rem; font-weight: 100;">
+For a company such as lululemon which has a strong focus on community engagement and an inclusive in store experience to drive brand loyalty, this is an important consideration. Ecommerce patterns were established at a time when technology did not allow brands to craft a true reflection of their flagship bricks and mortar experience. 
+
+          </p>
+
+          <p style="font-size: 1rem; font-weight: 100;">
+            The emergence of generative AI and Augmented Reality (AR) will have a huge impact on the development of ecommerce in the mid to long term as these technologies mature and find product-market fit. In the short term there have been advances in design patterns across different verticals which can be explored to enhance the ecommerce experience and aid guests in their outfitting requirements. The problem statement I will be exploring is below:
+
+          </p>
+
+
+          <p style="font-size: 1rem; font-weight: 100; margin: 0 1rem 0 1rem;">
+            How might we develop an inspiring end-to-end outfitting ecosystem,
+
+<br>
+To ecommerce guests, <br>
+That provides relevant head-to-toe look recommendations?
+            
+          </p>
+          <br>
+      
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container project-text fourth-section-slide"
+  style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div class="row"
+    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div id="nav-overview" class="col-12 column-twelve"
+      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+      <div id="spotify-summary-content">
+        <!-- <br> -->
+
+        <p style="font-size: 1.25rem; font-weight: 200; text-decoration: none; color: #333333;">
+          Guest Persona
+        </p>
+
+
+        <p style="font-size: 1rem; font-weight: 100;">
+            Through exploration of different functionalities, such as adding filters and highlighting key product differentiations, the goal was to create an interactive and user-friendly comparison interface. The benefits of ideation include identifying innovative ideas, improving user experience, and finding effective solutions to meet customer needs, ultimately enhancing the overall value of the feature.          
+        </p>
+
+
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  <div class="container project-text fourth-section-slide"
+  style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div class="row"
+    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div id="nav-overview" class="col-12 column-twelve"
+      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+      <div id="spotify-summary-content">
+        <!-- <br> -->
+
+        <p style="font-size: 1.25rem; font-weight: 200; text-decoration: none; color: #333333;">
+          Ideation
+        </p>
+
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          The below ideas represent an exploration of how product discovery might aid guests in their end-to-end outfitting experience. The overriding concept is to create space for the guest to explore products with context. This project does not explore emerging technologies, but tries to imagine how focussing on user interface innovation could realistically improve the ecommerce experience in the short term.
+                </p>
+
+
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="container project-text fourth-section-slide"
+  style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div class="row"
+    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div id="nav-overview" class="col-12 column-twelve"
+      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flext-start; align-items: center;">
+
+      <div id="spotify-summary-content">
+        <!-- <br> -->
+
+        <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+          #1 ‘You may also like’ filters
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          The established ecommerce design pattern features individual product pages that allow guests to explore products in detail. lululemon has enhanced this pattern with high-quality imagery, close up shots, and styling recommendations. The ‘Shop this look’ feature provides convenient links to other items in the product photos, helping guests easily buy into outfit styling and product intention.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          lululemon includes a ‘You may also like’ section in two places on their product pages, suggesting products based on item similarity. With outfitting in mind, I believe there is an opportunity to further develop the secondary ‘You may also like’ section by including a filtering system.
+
+        </p>
+        
+        <p style="font-size: 1rem; font-weight: 100;">
+          In this concept, the primary ‘You may also like’ section remains focused on similar product recommendations, while the secondary section suggests products for outfit building. The selected product remains visible to provide outfit-building context, and guests can filter the recommended products, allowing exploration of numerous relevant options without leaving the selected product page. This concept would also benefit from the introduction of ‘Add to Wishlist’ functionality which is accessible without entering the product page.
+
+        </p>
+
+        
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+          <div class="container project-container fourth-section-slide"
+            style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+            <div class="row"
+              style="width: 100%; max-width: 1200px; margin: 0 15px 15px 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+              <div id="nav-overview" class="col-12 column-twelve"
+                style="margin: 15px 15px 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flex-start; align-items: center;">
+
+
+
+
+                <div id="carouselTE2" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000" style="overflow: hidden !important; padding-bottom: 4rem !important;">
+
+                  <div class="carousel-indicators" style="bottom: 2rem !important;">
+                    <button type="button" data-bs-target="#carouselTE2" data-bs-slide-to="0"
+                      class="active indicator-button"></button>
+                    <button type="button" data-bs-target="#carouselTE2" data-bs-slide-to="1"
+                      class="indicator-button"></button>
+                  </div>
+
+                  <div class="carousel-inner" style="overflow: visible !important;">
+
+                    <div class="carousel-item active">
+                      <img class="d-block w-100"
+                        style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                        src="../assets/compare-filter.png" alt="product compare filters sketch">
+
+                      <!--
+       <div class="carousel-caption d-none d-md-block">
+          <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+            Social Facilities Center
+              <br>
+            <span style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+            University Campus
+            </span>
+         </p>
+       </div>
+       -->
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                      <img class="d-block w-100"
+                        style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                        src="../assets/product-filters-mockup.png" alt="product compare filters mockup">
+
+                      <!--
+       <div class="carousel-caption d-none d-md-block">
+          <h5>Anastasios G. Leventis</h5>
+          <p>University House</p>
+       </div>
+-->
+
+                    </div>
+                    
+
+                    
+                    
+
+
+                  </div>
+
+                  <button class="carousel-control-prev" data-bs-target="#carouselTE2" type="button" data-bs-slide="prev" style="bottom: 4rem !important;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+
+                  <button class="carousel-control-next" data-bs-target="#carouselTE2" type="button" data-bs-slide="next" style="bottom: 4rem !important;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <br>
+
+
+<!--
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+    <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+      <img src="../assets/compare-filter.png" alt="compare filters" width="100%">
+    </div>
+
+
+  </div>
+
+</div>
+
+</div>
+<br><br>
+
+
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+    <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+      <img src="../assets/product-filters-mockup.png" alt="product filters" width="100%">
+    </div>
+
+
+  </div>
+
+</div>
+
+</div>
+<br><br>
+-->
+
+
+
+
+
+<div class="container project-text fourth-section-slide"
+  style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div class="row"
+    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div id="nav-overview" class="col-12 column-twelve"
+      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flext-start; align-items: center;">
+
+      <div id="spotify-summary-content">
+        <!-- <br> -->
+
+        <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+          #2 Streaming service content discovery
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          Typically, ecommerce sites feature a top menu for guests to navigate to a product category. Leading platforms have expanded menu options to explore features or collections.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          lululemon excels at allowing guests to explore collections rather than categories. Their landing page combines aspirational styling shots and product images to inspire guests to explore curated features and collections. The top menu includes a "Business Casual Clothes" collection, creating a store within a store. Subcategories are accessible through a tab menu, serving as one-click filters.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          The concept below reworks the landing page, presenting curated product collections alongside aspirational styling shots which provide the outfit-building context. Drawing inspiration from streaming platforms - which are constantly testing and iterating language, tone, and even the type of still image used - to create personalised discovery opportunities.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          While personalisation benefits from user identification, requiring a login can be a barrier in ecommerce. lululemon offers low-cost, high-value incentives to encourage registration, displaying a strong understanding of the guest persona.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          In this concept, customer interaction can be measured, category names tweaked, and styling shots analysed to create the best product discovery opportunities for guests.
+
+        </p>
+
+        
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+          <div class="container project-container fourth-section-slide"
+            style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+            <div class="row"
+              style="width: 100%; max-width: 1200px; margin: 0 15px 15px 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+              <div id="nav-overview" class="col-12 column-twelve"
+                style="margin: 15px 15px 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flex-start; align-items: center;">
+
+
+
+
+                <div id="carouselTE3" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000" style="overflow: hidden !important; padding-bottom: 4rem !important;">
+
+                  <div class="carousel-indicators" style="bottom: 2rem !important;">
+                    <button type="button" data-bs-target="#carouselTE3" data-bs-slide-to="0"
+                      class="active indicator-button"></button>
+                    <button type="button" data-bs-target="#carouselTE3" data-bs-slide-to="1"
+                      class="indicator-button"></button>
+                      <button type="button" data-bs-target="#carouselTE3" data-bs-slide-to="2"
+                      class="indicator-button"></button>
+                      <button type="button" data-bs-target="#carouselTE3" data-bs-slide-to="3"
+                      class="indicator-button"></button>
+                  </div>
+
+                  <div class="carousel-inner" style="overflow: visible !important;">
+
+                    <div class="carousel-item active">
+                      <img class="d-block w-100"
+                        style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                        src="../assets/you-may-also-like.png" alt="you may also like sketch">
+
+                      <!--
+       <div class="carousel-caption d-none d-md-block">
+          <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+            Social Facilities Center
+              <br>
+            <span style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+            University Campus
+            </span>
+         </p>
+       </div>
+       -->
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                      <img class="d-block w-100"
+                        style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                        src="../assets/you-may-like-mockup-closed.png" alt="you may also like closed mockup">
+
+                      <!--
+       <div class="carousel-caption d-none d-md-block">
+          <h5>Anastasios G. Leventis</h5>
+          <p>University House</p>
+       </div>
+-->
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <img class="d-block w-100"
+                          style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                          src="../assets/you-may-also-like-mockup-open.png" alt="you may also like open mockup">
+  
+                        <!--
+         <div class="carousel-caption d-none d-md-block">
+            <h5>Anastasios G. Leventis</h5>
+            <p>University House</p>
+         </div>
+  -->
+  
+                      </div>
+
+                      <div class="carousel-item">
+
+                        <img class="d-block w-100"
+                          style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                          src="../assets/you-may-like-mockup-view-product.png" alt="you may also like view product mockup">
+  
+                        <!--
+         <div class="carousel-caption d-none d-md-block">
+            <h5>Anastasios G. Leventis</h5>
+            <p>University House</p>
+         </div>
+  -->
+  
+                      </div>
+                    
+
+                    
+                    
+
+
+                  </div>
+
+                  <button class="carousel-control-prev" data-bs-target="#carouselTE3" type="button" data-bs-slide="prev" style="bottom: 4rem !important;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+
+                  <button class="carousel-control-next" data-bs-target="#carouselTE3" type="button" data-bs-slide="next" style="bottom: 4rem !important;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <br>
+
+
+<!--
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+    <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+      <img src="../assets/you-may-also-like.png" alt="you may also like" width="100%">
+    </div>
+
+
+  </div>
+
+</div>
+
+</div>
+<br><br>
+
+
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+    <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+      <img src="../assets/you-may-like-mockup-closed.png" alt="you may also like closed" width="100%">
+    </div>
+
+
+  </div>
+
+</div>
+
+</div>
+<br><br>
+
+
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+    <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+      <img src="../assets/you-may-like-mockup-open.png" alt="you may also like open" width="100%">
+    </div>
+
+
+  </div>
+
+</div>
+
+</div>
+<br><br>
+-->
+
+
+
+
+
+
+
+
+<div class="container project-text fourth-section-slide"
+  style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div class="row"
+    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div id="nav-overview" class="col-12 column-twelve"
+      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flext-start; align-items: center;">
+
+      <div id="spotify-summary-content">
+        <!-- <br> -->
+
+        <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+          #3 ‘Add to Wishlist’ elevation
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          The design patterns that emerged in early ecommerce did not fully capture the in-store experience of outfit-building and contextualising products in a head-to-toe look.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          The existing "Add to Wish List" feature often feels like an afterthought within the user experience, serving as a safety net for shopping cart indecision and abandonments.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          The concept below aims to enhance the wish list feature by drawing inspiration from popular social media platforms. By leveraging established design patterns, the concept elevates wish lists to a moodboard layout, allowing guests to build and explore outfits in a visually engaging interface. Mimicking social media image discovery, the implementation includes ‘You may also like’ functionality to further enhance outfit-building.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          This concept can be expanded upon to create a valuable omnichannel guest experience. QR codes on product labels could enable guests to add items from in-store. Image recognition could be used to match uploaded photos, suggesting alternatives for competitor products. Integration with social media platforms could enable direct wish list additions from Instagram or other platforms. Elevated wish lists also provide commercial value by encouraging guest creativity and identifying missing products or categories.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          Overall, this concept enhances the wish list feature, creating a more immersive and visually appealing ecommerce experience that aligns with social commerce trends and captures the in-store experimentation of outfit building.
+
+        </p>
+      
+        
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+          <div class="container project-container fourth-section-slide"
+            style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+            <div class="row"
+              style="width: 100%; max-width: 1200px; margin: 0 15px 15px 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+              <div id="nav-overview" class="col-12 column-twelve"
+                style="margin: 15px 15px 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flex-start; align-items: center;">
+
+
+
+
+                <div id="carouselTE4" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000" style="overflow: hidden !important; padding-bottom: 4rem !important;">
+
+                  <div class="carousel-indicators" style="bottom: 2rem !important;">
+                    <button type="button" data-bs-target="#carouselTE4" data-bs-slide-to="0"
+                      class="active indicator-button"></button>
+                    <button type="button" data-bs-target="#carouselTE4" data-bs-slide-to="1"
+                      class="indicator-button"></button>
+                  </div>
+
+                  <div class="carousel-inner" style="overflow: visible !important;">
+
+                    <div class="carousel-item active">
+                      <img class="d-block w-100"
+                        style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                        src="../assets/best-for.png" alt="product differentiation sketch">
+
+                      <!--
+       <div class="carousel-caption d-none d-md-block">
+          <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+            Social Facilities Center
+              <br>
+            <span style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+            University Campus
+            </span>
+         </p>
+       </div>
+       -->
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                      <img class="d-block w-100"
+                        style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                        src="../assets/product-differentiation-mockup.png" alt="product differentiation mockup">
+
+                      <!--
+       <div class="carousel-caption d-none d-md-block">
+          <h5>Anastasios G. Leventis</h5>
+          <p>University House</p>
+       </div>
+-->
+
+                    </div>
+                    
+
+                    
+                    
+
+
+                  </div>
+
+                  <button class="carousel-control-prev" data-bs-target="#carouselTE4" type="button" data-bs-slide="prev" style="bottom: 4rem !important;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+
+                  <button class="carousel-control-next" data-bs-target="#carouselTE4" type="button" data-bs-slide="next" style="bottom: 4rem !important;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <br>
+
+
+<!--
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+    <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+      <img src="../assets/best-for.png" alt="product differentiation sketch" width="100%">
+    </div>
+
+
+  </div>
+
+</div>
+
+</div>
+<br><br>
+
+
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+    <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+      <img src="../assets/product-differentiation-mockup.png" alt="product differentiation mockup" width="100%">
+    </div>
+
+
+  </div>
+
+</div>
+
+</div>
+<br><br>
+-->
+
+
+
+
+
+
+<div class="container project-text fourth-section-slide"
+  style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div class="row"
+    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div id="nav-overview" class="col-12 column-twelve"
+      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flext-start; align-items: center;">
+
+      <div id="spotify-summary-content">
+        <!-- <br> -->
+
+        <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+          #4 Outfit configurator
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          The final idea involves fully curated outfit packages that can be customised by guests. This concept builds upon the emerging ecommerce pattern of offering premium services and personalization options.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          The idea capitalises on lululemon's loyal customer base, who seek complete outfits from the brand. It also aims to simulate a personal shopping experience with minimal cognitive load for guests.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          Implementing this feature fully poses experiential and logistical challenges, particularly regarding the need for extensive model shots for every possible combination. 3D modelling technologies could potentially address this, but careful consideration of guest expectations is crucial before investing heavily in this direction.
+
+        </p>
+
+        <p style="font-size: 1rem; font-weight: 100;">
+          In the first instance, the concept could be tested with a small number of editable variables, such as toggling between outfits, removing items, or selecting colour palettes. By implementing a lightweight version, the concept's value can be assessed with guests before further development.
+
+        </p>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<div class="container project-container fourth-section-slide"
+  style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div class="row"
+    style="width: 100%; max-width: 1200px; margin: 0 15px 15px 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+    <div id="nav-overview" class="col-12 column-twelve"
+      style="margin: 15px 15px 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flex-start; align-items: center;">
+
+
+
+
+      <div id="carouselTE5" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000" style="overflow: hidden !important; padding-bottom: 4rem !important;">
+
+        <div class="carousel-indicators" style="bottom: 2rem !important;">
+          <button type="button" data-bs-target="#carouselTE5" data-bs-slide-to="0"
+            class="active indicator-button"></button>
+          <button type="button" data-bs-target="#carouselTE5" data-bs-slide-to="1"
+            class="indicator-button"></button>
+            <button type="button" data-bs-target="#carouselTE5" data-bs-slide-to="2"
+            class="indicator-button"></button>
+        </div>
+
+        <div class="carousel-inner" style="overflow: visible !important;">
+
+          <div class="carousel-item active">
+            <img class="d-block w-100"
+              style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+              src="../assets/product-expert.png" alt="product expert sketch">
+
+            <!--
+<div class="carousel-caption d-none d-md-block">
+<p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #333333;">
+  Social Facilities Center
+    <br>
+  <span style="font-size: 1rem; font-weight: 100; text-decoration: none; color: #333333;">
+  University Campus
+  </span>
+</p>
+</div>
+-->
+
+          </div>
+
+          <div class="carousel-item">
+
+            <img class="d-block w-100"
+              style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+              src="../assets/product-expert-mockup-closed.png" alt="product expert closed mockup">
+
+            <!--
+<div class="carousel-caption d-none d-md-block">
+<h5>Anastasios G. Leventis</h5>
+<p>University House</p>
+</div>
+-->
+
+          </div>
+
+          <div class="carousel-item">
+
+              <img class="d-block w-100"
+                style="padding: 5vmin 10vmin 5vmin 10vmin; filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15));"
+                src="../assets/product-expert-mockup-open.png" alt="product expert open mockup">
+
+              <!--
+<div class="carousel-caption d-none d-md-block">
+  <h5>Anastasios G. Leventis</h5>
+  <p>University House</p>
+</div>
+-->
+
+            </div>
+          
+
+          
+          
+
+
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#carouselTE5" type="button" data-bs-slide="prev" style="bottom: 4rem !important;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" data-bs-target="#carouselTE5" type="button" data-bs-slide="next" style="bottom: 4rem !important;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<br>
+
+
+<!--
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+    <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+      <img src="../assets/product-expert.png" alt="product expert" width="100%">
+    </div>
+
+
+  </div>
+
+</div>
+
+</div>
+<br><br>
+
+
+<div class="container project-container fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, .15)); margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+
+    <div id="spotify-image-content" style="display: flex; justify-content: center; align-items: center;">
+      <img src="../assets/product-expert-mockup.png" alt="product expert" width="100%">
+    </div>
+
+
+  </div>
+
+</div>
+
+</div>
+<br><br>
+-->
+
+
+
+
+
+<div class="container project-text fourth-section-slide"
+style="margin: 0px auto; display: flex; justify-content: center; align-items: flex-start;">
+
+<div class="row"
+  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+
+  <div id="nav-overview" class="col-12 column-twelve"
+    style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: flex-start; align-items: center;">
+
+    <div id="spotify-summary-content">
+      <!-- <br> -->
+
+      <p style="font-size: 1.25rem; font-weight: 200; text-decoration: none; color: #333333;">
+        Conclusion
+      </p>
+
+      <p style="font-size: 1rem; font-weight: 100;">
+        By subverting guest expectations and drawing inspiration from adjacent digital verticals which emerged after ecommerce patterns were established, lululemon has the opportunity to elevate the guest experience across their digital ecosystem. Through user interface innovation, lululemon can deliver head-to-toe look recommendations that are both inspiring and educational - delivering both increased brand engagement and commercial value.
+
+      </p>
+
+      <br><br>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+</script>
+
+</body>
+
+</html>
+
+
+
