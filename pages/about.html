@@ -2,371 +2,491 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>about</title>
 
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../favicon.png" type="image/png">
 
-  <title>about</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Geist+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
 
-  <script>
+  <style>
+    /* Layout: a 12-column poster grid. Huge lowercase word up top, small annotations
+       pinned to the edges, lots of empty paper, content hung off hairline rules. */
+    :root {
+      --paper: #EEEBE4;
+      --ink: #1C1C1A;
+      --ink-soft: #5E5C56;
+      --rule: #C9C5BB;
+      --tone: #D9D5CC;
+      --signal: #E0301E;
 
-    function reload() {
-      var perfEntries = performance.getEntriesByType("navigation");
+      --f-display: "Geist", "Helvetica Neue", Arial, sans-serif;
+      --f-text: "Geist", "Helvetica Neue", Arial, sans-serif;
+      --f-serif: "Newsreader", Georgia, "Times New Roman", serif;
+      --f-mono: "Geist Mono", ui-monospace, Menlo, monospace;
 
-      if (window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // “Fear is the path to the Dark Side" - Yoda
-      }
+      --gutter: clamp(16px, 3vw, 40px);
+      --col-gap: clamp(12px, 2vw, 28px);
+    }
 
-      if (perfEntries[0].type === "back_forward" || perfEntries[0].type === "reload") {
-        // location.reload(true);
-        window.scroll(0, 0);
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --paper: #161614;
+        --ink: #ECE9E2;
+        --ink-soft: #9A978F;
+        --rule: #3A3935;
+        --tone: #2A2926;
+        --signal: #FF5A45;
+        color-scheme: dark;
       }
     }
 
-  </script>
+    :root[data-theme="dark"] {
+      --paper: #161614;
+      --ink: #ECE9E2;
+      --ink-soft: #9A978F;
+      --rule: #3A3935;
+      --tone: #2A2926;
+      --signal: #FF5A45;
+      color-scheme: dark;
+    }
 
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      padding-inline: var(--gutter);
+      padding-block: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--f-text);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--signal); }
+    a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+    img { max-width: 100%; display: block; }
+
+    .page { max-width: 1440px; margin-inline: auto; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      column-gap: var(--col-gap);
+    }
+
+    /* small caps labels, poster style */
+    .label {
+      font-family: var(--f-text);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      line-height: 1.35;
+    }
+    .label span { display: block; font-weight: 400; color: var(--ink-soft); }
+    .mono { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
+
+    /* ---------- header ---------- */
+    .site-head {
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 10;
+      background: var(--paper);
+      padding-block: 18px 14px;
+      align-items: baseline;
+    }
+    .wordmark { grid-column: 1 / span 4; font-size: 15px; font-weight: 500; letter-spacing: -0.01em; }
+    .nav { grid-column: 7 / -1; display: flex; justify-content: space-between; gap: 16px; }
+    .nav a { font-size: 13px; color: var(--ink-soft); }
+    .nav a[aria-current="page"] { color: var(--ink); }
+    .nav a[aria-current="page"]::before {
+      content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+      background: var(--signal); margin-right: 7px; vertical-align: 2px;
+    }
+
+    /* ---------- hero ---------- */
+    .hero { padding-top: clamp(48px, 9vw, 120px); }
+    .hero-meta { row-gap: 18px; margin-bottom: clamp(20px, 3vw, 36px); }
+    .hero-meta > :nth-child(1) { grid-column: 1 / span 3; }
+    .hero-meta > :nth-child(2) { grid-column: 4 / span 3; }
+    .hero-meta > :nth-child(3) { grid-column: 7 / span 3; }
+    .hero-meta > :nth-child(4) { grid-column: 10 / span 3; text-align: right; }
+
+    .hero-word {
+      margin: 0;
+      font-family: var(--f-display);
+      font-weight: 500;
+      font-size: clamp(5.5rem, 24vw, 22rem);
+      line-height: 0.78;
+      letter-spacing: -0.065em;
+      margin-left: -0.05em;
+      position: relative;
+    }
+    .hero-word sup {
+      position: absolute;
+      top: 0.2em;
+      font-family: var(--f-mono);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      margin-left: 0.6rem;
+    }
+
+    /* ---------- portrait + intro ---------- */
+    .intro { padding-top: clamp(64px, 12vw, 180px); row-gap: 32px; align-items: end; }
+    .portrait { grid-column: 7 / span 3; }
+    .portrait-note { grid-column: 10 / span 3; align-self: end; color: var(--ink-soft); }
+
+    .ph {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      aspect-ratio: 4 / 5;
+      background-color: var(--tone);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      overflow: hidden;
+    }
+    .ph::after {
+      content: attr(data-label);
+      position: absolute; left: 10px; bottom: 8px;
+      font-family: var(--f-mono); font-size: 10px; color: var(--ink-soft);
+      letter-spacing: 0.02em;
+    }
+    .ph.square { aspect-ratio: 1 / 1; }
+
+    .statement {
+      padding-top: clamp(56px, 9vw, 140px);
+    }
+    .statement p {
+      grid-column: 1 / -1;
+      margin: 0;
+      font-family: var(--f-serif);
+      font-weight: 300;
+      font-size: clamp(1.6rem, 3.6vw, 3.25rem);
+      line-height: 1.12;
+      letter-spacing: -0.012em;
+      text-indent: 25%;
+      text-wrap: pretty;
+    }
+    .statement em { font-style: italic; }
+
+    /* ---------- section frame ---------- */
+    .section { padding-top: clamp(80px, 12vw, 180px); }
+    .section-rule { border-top: 1px solid var(--ink); padding-top: 12px; }
+    .section-head { grid-column: 1 / span 3; }
+    .section-body { grid-column: 4 / -1; min-width: 0; }
+
+    /* practice: two narrow text columns + facts */
+    .practice { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); column-gap: var(--col-gap); row-gap: 32px; }
+    .practice .col { grid-column: span 3; font-size: 13px; line-height: 1.5; min-width: 0; }
+    .practice .col p { margin: 0 0 1em; max-width: 34ch; }
+    .facts { list-style: none; margin: 0; padding: 0; }
+    .facts li { display: grid; grid-template-columns: 4.5em 1fr; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--rule); font-size: 12px; }
+    .facts li:first-child { border-top: 1px solid var(--rule); }
+    .facts b { font-weight: 500; font-variant-numeric: tabular-nums; }
+
+    /* employment: dated index */
+    .roles { list-style: none; margin: 0; padding: 0; }
+    .role {
+      display: grid;
+      grid-template-columns: repeat(9, minmax(0, 1fr));
+      column-gap: var(--col-gap);
+      row-gap: 10px;
+      padding-block: 22px 26px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .role:first-child { padding-top: 0; }
+    .role .when { grid-column: 1 / span 2; padding-top: 0.55em; }
+    .role h3 {
+      grid-column: 3 / span 4; margin: 0;
+      font-family: var(--f-display); font-weight: 400;
+      font-size: clamp(1.5rem, 2.6vw, 2.35rem); line-height: 1; letter-spacing: -0.035em;
+    }
+    .role .what { grid-column: 7 / span 3; font-size: 13px; line-height: 1.5; min-width: 0; }
+    .role .what .title { display: block; font-weight: 500; margin-bottom: 6px; }
+    .role .what p { margin: 0; color: var(--ink-soft); }
+
+    /* pull quote */
+    .quote { padding-top: clamp(96px, 14vw, 200px); }
+    .quote blockquote {
+      grid-column: 4 / span 8; margin: 0;
+      font-family: var(--f-display); font-weight: 400;
+      font-size: clamp(1.9rem, 4.6vw, 4.25rem); line-height: 1.02; letter-spacing: -0.04em;
+      text-wrap: balance;
+    }
+    .quote blockquote p { margin: 0; text-indent: 1.4em; }
+    .quote figcaption { grid-column: 4 / span 5; margin-top: 28px; }
+    .quote .aside { grid-column: 1 / span 3; grid-row: 1; align-self: start; padding-top: 0.9em; }
+
+    /* education: two-up list */
+    .courses { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--col-gap); row-gap: 36px; }
+    .course { min-width: 0; border-top: 1px solid var(--rule); padding-top: 12px; }
+    .course .yr { display: block; margin-bottom: 14px; }
+    .course h3 { margin: 0 0 2px; font-weight: 500; font-size: 15px; letter-spacing: -0.01em; }
+    .course .org { display: block; font-size: 13px; color: var(--ink-soft); margin-bottom: 10px; }
+    .course p { margin: 0; font-size: 13px; line-height: 1.5; max-width: 44ch; }
+
+    /* image strip */
+    .strip { padding-top: clamp(80px, 12vw, 160px); row-gap: 16px; }
+    .strip .note { grid-column: 1 / span 3; align-self: start; }
+    .strip .ph { grid-column: span 2; }
+    .strip .ph:nth-child(2) { grid-column: 7 / span 2; }
+
+    /* footer */
+    .site-foot { padding-block: clamp(120px, 16vw, 220px) 28px; row-gap: 20px; align-items: end; }
+    .site-foot .big {
+      grid-column: 1 / span 8;
+      font-family: var(--f-display); font-weight: 500;
+      font-size: clamp(2.6rem, 7vw, 6.5rem); line-height: 0.9; letter-spacing: -0.055em;
+    }
+    .site-foot .big a { border-bottom: 2px solid currentColor; }
+    .site-foot .meta { grid-column: 10 / span 3; text-align: right; }
+    .site-foot .base { grid-column: 1 / -1; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-top: 1px solid var(--rule); padding-top: 10px; margin-top: 24px; color: var(--ink-soft); }
+
+    /* ---------- tablet ---------- */
+    @media (max-width: 960px) {
+      .nav { grid-column: 5 / -1; }
+      .portrait { grid-column: 6 / span 4; }
+      .portrait-note { grid-column: 10 / span 3; }
+      .section-head { grid-column: 1 / -1; margin-bottom: 36px; }
+      .section-body { grid-column: 1 / -1; }
+      .quote blockquote { grid-column: 1 / -1; }
+      .quote .aside { grid-column: 1 / -1; grid-row: auto; order: -1; margin-bottom: 24px; }
+      .quote figcaption { grid-column: 1 / -1; }
+    }
+
+    /* ---------- phone ---------- */
+    @media (max-width: 640px) {
+      body { font-size: 14px; }
+      .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .wordmark { grid-column: 1 / span 2; }
+      .nav { grid-column: 1 / -1; justify-content: flex-start; gap: 18px; margin-top: 8px; }
+
+      .hero-meta > :nth-child(1) { grid-column: 1 / span 2; }
+      .hero-meta > :nth-child(2) { grid-column: 3 / span 2; }
+      .hero-meta > :nth-child(3) { grid-column: 1 / span 2; }
+      .hero-meta > :nth-child(4) { grid-column: 3 / span 2; text-align: left; }
+      .hero-word { font-size: 31vw; }
+      .hero-word sup { display: none; }
+
+      .portrait { grid-column: 2 / span 3; }
+      .portrait-note { grid-column: 2 / span 3; }
+
+      .statement p { text-indent: 18%; }
+
+      .practice { grid-template-columns: minmax(0, 1fr); }
+      .practice .col { grid-column: 1 / -1; }
+
+      .role { grid-template-columns: minmax(0, 1fr); }
+      .role .when, .role h3, .role .what { grid-column: 1 / -1; }
+      .role .when { padding-top: 0; }
+
+      .courses { grid-template-columns: minmax(0, 1fr); }
+
+      .strip .note { grid-column: 1 / -1; }
+      .strip .ph, .strip .ph:nth-child(2) { grid-column: span 2; }
+      .strip .ph:nth-child(4) { grid-column: 2 / span 2; }
+
+      .site-foot .big { grid-column: 1 / -1; }
+      .site-foot .meta { grid-column: 1 / -1; text-align: left; }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-word { animation: rise 0.9s cubic-bezier(.2, .7, .1, 1) both; }
+      @keyframes rise { from { transform: translateY(0.08em); opacity: 0.35; } to { transform: none; opacity: 1; } }
+    }
+  </style>
 </head>
 
-<body onload="reload()"
-  style="font-family: 'Open Sans', sans-serif; text-decoration: none; color: #333333; background-color: #FAFAFA">
+<body>
+  <div class="page">
 
-  <!--<div class="animation-screen"></div>-->
+    <header class="site-head grid">
+      <a class="wordmark" href="../">a northern boy</a>
+      <nav class="nav" aria-label="Main">
+        <a href="about.html" aria-current="page">about</a>
+        <a href="work.html">work</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </header>
 
-  <div class="container nav-container"
-    style="position: sticky;
-        top: 0px; background-color: #FAFAFA; z-index: 9999; margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+    <main>
 
-    <div class="row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+      <section class="hero">
+        <div class="hero-meta grid">
+          <div class="label">Craig Weighman<span>Designer, product generalist</span></div>
+          <div class="label">Practice<span>Digital experience &amp; product</span></div>
+          <div class="label">Based<span>Manchester, UK</span></div>
+          <div class="label">In product<span>Since 2010</span></div>
+        </div>
+        <h1 class="hero-word">about<sup>09.26</sup></h1>
+      </section>
 
-      <div id="nav-overview" class="col-12 column-twelve"
-        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; ">
+      <section class="intro grid" aria-label="Portrait">
+        <div class="ph portrait" data-label="Portrait / placeholder" role="img" aria-label="Portrait of Craig (placeholder)"></div>
+        <div class="portrait-note label">Craig Weighman<span>Photographed 2026</span></div>
+      </section>
 
-        <div id="nav-overview-content">
+      <section class="statement grid">
+        <p>Design-led product generalist. Sixteen years making products, the last seven designing digital ones. I take eCommerce work from the first question to the final QA pass, with an eye for detail and a soft spot for Dieter Rams. <em>Also a shoegaze guitarist.</em></p>
+      </section>
 
-          <a href="../" style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #333333;">
-            <div>
-              a northern boy
+      <section class="section" aria-labelledby="h-practice">
+        <div class="section-rule grid">
+          <h2 class="section-head label" id="h-practice">Practice<span>How I work</span></h2>
+          <div class="section-body practice">
+            <div class="col">
+              <p>I work across digital experience design and product management, usually as the person who connects the two. Research, problem definition, interface design and delivery sit with me from start to finish.</p>
+              <p>A design system in Figma and development-ready files keep engineers moving in an agile process.</p>
             </div>
-          </a>
-
+            <div class="col">
+              <p>Decisions come from evidence. I run user research, read product performance in GA4, and use both to set priorities.</p>
+              <p>Before anything ships I QA it end to end, because the last ten percent is where a product feels finished.</p>
+            </div>
+            <div class="col">
+              <ul class="facts">
+                <li><b>2010</b><span>First product role, at COS and ASOS</span></li>
+                <li><b>2016</b><span>Mentoring young founders at The Prince's Trust</span></li>
+                <li><b>2019</b><span>Moved into digital product</span></li>
+                <li><b>2023</b><span>First in-house UX/UI designer at Reigning Champ</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </section>
 
-      </div>
-
-      <div id="nav-summary" class="col-12 column-twelve"
-        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; ">
-
-        <div id="nav-summary-content">
-
-          <a class="nav-button" href="about.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #333333;">
-            <span>
-              about
-            </span>
-          </a>
-
-          <a class="nav-button" href="work.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
-            <span>
-              work
-            </span>
-          </a>
-          
-           <a class="nav-button" href="projects.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
-            <span>
-              projects
-            </span>
-          </a>
-<!--
-          <a class="nav-button" href="projects.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
-            <span>
-              projects
-            </span>
-          </a>
--->
+      <section class="section" aria-labelledby="h-work">
+        <div class="section-rule grid">
+          <h2 class="section-head label" id="h-work">Employment<span>2010 to present</span></h2>
+          <div class="section-body">
+            <ol class="roles" reversed>
+              <li class="role">
+                <span class="when mono">Sep 2023 – Now</span>
+                <h3>Reigning Champ</h3>
+                <div class="what">
+                  <span class="title">Digital Experience Designer</span>
+                  <p>Leading eCommerce end to end. Led the redesign and migration of reigningchamp.com to Shopify 2.0, built a scalable design system in Figma, and run research, GA4 analysis and release QA.</p>
+                </div>
+              </li>
+              <li class="role">
+                <span class="when mono">Nov 2021 – Nov 2022</span>
+                <h3>Avalanche Insights</h3>
+                <div class="what">
+                  <span class="title">Product Designer</span>
+                  <p>Led visual and interaction design for a machine learning insights platform, taking ideas from concept to launch with the user in view throughout.</p>
+                </div>
+              </li>
+              <li class="role">
+                <span class="when mono">Jul 2019 – Nov 2021</span>
+                <h3>The GoodBox Co</h3>
+                <div class="what">
+                  <span class="title">Product Designer &amp; Product Manager</span>
+                  <p>Built digital fundraising tools for a cashless society. Owned research, prototyping, testing and design across customer-facing concepts, and set the company's KPIs.</p>
+                </div>
+              </li>
+              <li class="role">
+                <span class="when mono">Oct 2016 – Nov 2018</span>
+                <h3>The Prince's Trust</h3>
+                <div class="what">
+                  <span class="title">Startup Business Executive</span>
+                  <p>Trained and mentored disadvantaged young people with a business idea, through Lean Startup workshops and one-to-one support.</p>
+                </div>
+              </li>
+              <li class="role">
+                <span class="when mono">May 2010 – Oct 2016</span>
+                <h3>COS, ASOS &amp; more</h3>
+                <div class="what">
+                  <span class="title">Product Developer</span>
+                  <p>Planned and delivered product with technical and design teams, shaped by brand strategy and weekly sales feedback.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
         </div>
+      </section>
 
-      </div>
+      <figure class="quote grid">
+        <div class="aside label">Chance UK<span>Volunteer mentor, 2016 – 2017</span></div>
+        <blockquote>
+          <p>A year of weekly meetings with a school-age mentee. An experience I rank above all personal and professional achievements.</p>
+        </blockquote>
+        <figcaption class="mono">Mentors commit for one full year, planning activities that build the mentee's confidence.</figcaption>
+      </figure>
 
+      <section class="section" aria-labelledby="h-edu">
+        <div class="section-rule grid">
+          <h2 class="section-head label" id="h-edu">Education<span>Degrees &amp; courses</span></h2>
+          <div class="section-body">
+            <ul class="courses">
+              <li class="course">
+                <span class="yr mono">2022</span>
+                <h3>Scrum Team Member Certification</h3>
+                <span class="org">Scrum Inc.</span>
+                <p>Fundamentals of working on a Scrum team, with curriculum co-developed by Scrum co-creator Dr. Jeff Sutherland.</p>
+              </li>
+              <li class="course">
+                <span class="yr mono">2021 – 2022</span>
+                <h3>UX Designer Learning Path</h3>
+                <span class="org">Interaction Design Foundation</span>
+                <p>User-centred design with a focus on design thinking and open, collaborative ideation.</p>
+              </li>
+              <li class="course">
+                <span class="yr mono">2018 – 2019</span>
+                <h3>The Developer Pathway</h3>
+                <span class="org">Northcoders</span>
+                <p>Twelve-week bootcamp in JavaScript, functional programming and test-driven development.</p>
+              </li>
+              <li class="course">
+                <span class="yr mono">2018</span>
+                <h3>Level 3 Award in Education and Training</h3>
+                <span class="org">The Prince's Trust</span>
+                <p>Inclusive teaching and mediation, with a focus on building relationships in leadership roles.</p>
+              </li>
+              <li class="course">
+                <span class="yr mono">2015</span>
+                <h3>Introduction to Product Design</h3>
+                <span class="org">UAL: Central Saint Martins</span>
+                <p>The creative process from brief to product presentation, centred on generating ideas.</p>
+              </li>
+              <li class="course">
+                <span class="yr mono">2007 – 2010</span>
+                <h3>BA (Hons) Design Management</h3>
+                <span class="org">University of Salford</span>
+                <p>Started in visual design and grew into the strategy of design.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    </div>
+      <section class="strip grid" aria-label="Outside work">
+        <div class="note label">Outside work<span>Guitar, pizza, microbreweries</span></div>
+        <div class="ph square" data-label="01 / placeholder" role="img" aria-label="Placeholder image"></div>
+        <div class="ph square" data-label="02 / placeholder" role="img" aria-label="Placeholder image"></div>
+        <div class="ph square" data-label="03 / placeholder" role="img" aria-label="Placeholder image"></div>
+      </section>
+
+    </main>
+
+    <footer class="site-foot grid">
+      <div class="big">Let's talk.<br><a href="contact.html">Get in touch</a></div>
+      <div class="meta label">Manchester, UK<span>53°28′N 2°14′W</span></div>
+      <div class="base mono"><span>a northern boy</span><span>© 2026</span></div>
+    </footer>
 
   </div>
-
-  <div class="container body-container first-section-slide"
-    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div class="row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-      <div id="background-title" class="col-lg-3 top-border"
-        style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative;">
-        <br>
-
-        <div id="seemless-title-content" style="font-size: 1.5rem; font-weight: 200">
-          background
-        </div>
-
-        <img class="content-vertical" src="../assets/background.png" alt="seemless colour content vertical">
-
-        <img class="content-horizontal" src="../assets/background-horizontal.png"
-          alt="seemless colour content horizontal">
-
-      </div>
-
-      <div id="background-text" class="col-lg-7 top-border"
-        style="margin: 15px; padding:0px;overflow:hidden; position: relative;">
-
-        <div id="seemless-overview-content">
-          <br>
-
-           <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-            Expert generalist with over ten years of experience in product development. Passionate about phenomenal products, extraordinary eye for detail, and a deep appreciation of user experience. Shoegaze guitarist.
-
-          </p>
-
-         <!--
-          
-          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-            Product Designer with over ten years of experience in product development. I am passionate about phenomenal design, have a superb aesthetic sense, an extraordinary eye for detail, and a deep appreciation of user experience.</br></br>
-When I’m not namechecking Dieter Rams you’ll find me doing something active in Vancouver, eating pizza, visiting a microbrewery, or playing guitar in a shoegaze band.
-          </p>
-
-          -->
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="container body-container second-section-slide"
-    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div class="row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-      <div id="employment-title" class="col-lg-3 top-border"
-        style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative;">
-        <br>
-
-        <div id="seemless-title-content" style="font-size: 1.5rem; font-weight: 200">
-          employment
-        </div>
-
-        <img class="content-vertical" src="../assets/employment.png" alt="seemless colour content vertical">
-
-        <img class="content-horizontal" src="../assets/employment-horizontal.png"
-          alt="seemless colour content horizontal">
-
-      </div>
-
-      <div id="employment-text" class="col-lg-7 top-border" style="margin: 15px; padding:0px;overflow:hidden; position: relative;">
-
-        <div id="seemless-overview-content">
-          <br>
-
-            <p>Reigning Champ | Digital Experience Designer | Sep 2023 - Present</p>
-          <p style="font-size: 1rem; font-weight: 100;">
-            Leading DX at Reigning Champ including the full migration of the eCommerce website to Shopify 2.0. Introduced product best practice to eCommerce team lacking technical knowledge and experience.
-</p>
-
-          <br>
-          
-                    <p>Avalanche Insights | Product Designer | Nov 2021 - Nov 2022</p>
-          <p style="font-size: 1rem; font-weight: 100;">
-            Leading visual and interaction design for revolutionary machine learning insights platform. Developing and delivering ideas through conception to launch maintaining empathy for the user throughout. Process-driven and collaborative in pursuit of product excellence.
-          </p>
-
-          <br>
-
-          <p>The GoodBox Co | Product Designer & Product Manager | Jul 2019 - Nov 2021</p>
-          <p style="font-size: 1rem; font-weight: 100;">
-            Iteratively developing digital fundraising tools for a cashless society. Responsible for research, prototyping, testing, and design on a number of customer facing product concepts. Data champion responsible for developing company KPIs and data insights.
-          </p>
-
-          <br>
-
-          <p>The Prince’s Trust | Startup Business Executive | Oct 2016 - Nov 2018</p>
-          <p style="font-weight: 100;">
-            Trained, educated, and mentored socially disadvantaged young people with a business idea. Delivered regular
-            workshop
-            sessions to introduce key concepts of The Lean Startup methodology followed by one to one support.
-          </p>
-
-          <br>
-
-          <p>COS Stores, ASOS.com, more… | Product Developer | May 2010 - Oct 2016</p>
-          <p style="font-weight: 100;">
-            Worked collaboratively with technical and design teams to plan and deliver product in line with brand
-            strategy and customer voice. Product features continually developed based on user feedback from weekly sales
-            stand-up.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="container body-container third-section-slide"
-    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div class="row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-      <div id="education-title" class="col-lg-3 top-border"
-        style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative;">
-        <br>
-
-        <div id="seemless-title-content" style="font-size: 1.5rem; font-weight: 200">
-          education
-        </div>
-
-        <img class="content-vertical" src="../assets/education.png" alt="seemless colour content vertical">
-
-        <img class="content-horizontal" src="../assets/education-horizontal.png"
-          alt="seemless colour content horizontal">
-
-      </div>
-
-      <div id="education-text" class="col-lg-7 top-border" style="margin: 15px; padding:0px;overflow:hidden; position: relative;">
-
-        <div id="seemless-overview-content">
-          <br>
-          
-                    <p>Scrum Inc. | Scrum Team Member Certification | Apr 2022</p>
-          <p style="font-weight: 100;">
-            Certified Scrum training covering fundamental knowledge needed to successfully work on a Scrum Team. Curriculum and content developed in collaboration with the co-creator of Scrum, Dr. Jeff Sutherland.
-          </p>
-
-          <br>
-
-          <p>Interaction Design Foundation | UX Designer Learning Path | Mar 2021 - Apr 2022</p>
-          <p style="font-weight: 100;">
-            Expanding my holistic knowledge of the technology industry and building my user-centred design toolbox with
-            a strong
-            focus on design thinking and emphasis on the creative, collaborative, and open ideation process.
-          </p>
-
-          <br>
-
-          <p>Northcoders | The Developer Pathway | Dec 2018 - Mar 2019</p>
-          <p style="font-weight: 100;">
-            Developed industry-standard programming skills and agile best practices during an intensive twelve-week
-            bootcamp.
-            Skills-based curriculum focused on Javascript, practicing functional programming and test-driven development
-            [TDD].
-          </p>
-
-          <br>
-
-          <p>Level 3 Award in Education and Training | The Prince’s Trust | Sep 2018 - Oct 2018</p>
-          <p style="font-weight: 100;">
-            Qualification covered inclusivity and mediation within teaching. Understanding interactions, barriers, and
-            hierarchies
-            improved my emotional intelligence allowing me to build better relationships while taking on leadership
-            roles.
-          </p>
-
-          <br>
-
-          <p>Introduction to Product Design | UAL: Central Saint Martins | Jan 2015 - Mar 2015</p>
-          <p style="font-weight: 100;">
-            Exploration of the creative process and tools for arriving at new possibilities, working from an initial
-            brief
-            through to
-            product design and presentation. Focus on the generation of ideas and design thinking.
-          </p>
-
-          <br>
-
-          <p>University of Salford | BA (Hons) Design Management | Sep 2007 - Jun 2010</p>
-          <p style="font-weight: 100;">
-            Generalised syllabus with self-directed project work allowing students to pursue and explore many aspects of
-            design. My
-            journey started with a visual design focus and developed into expansive work on the strategy of design.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="container body-container fourth-section-slide"
-    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div class="row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-      <div id="other-title" class="col-lg-3 top-border" style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative;">
-        <br>
-
-        <div id="seemless-title-content" style="font-size: 1.5rem; font-weight: 200">
-          other
-        </div>
-
-        <img class="content-vertical" src="../assets/other.png" alt="seemless colour content vertical">
-
-        <img class="content-horizontal" src="../assets/other-horizontal.png" alt="seemless colour content horizontal">
-
-      </div>
-
-      <div id="other-text" class="col-lg-7 top-border" style="margin: 15px; padding:0px;overflow:hidden; position: relative;">
-
-        <div id="seemless-overview-content">
-          <br>
-
-          <p>Chance UK | Young Person Volunteer Mentor | Mar 2016 - Mar 2017</p>
-          <p style="font-weight: 100;">
-            Mentors commit for one full year, meeting with the school-age mentee every week. Mentors plan fun yet
-            purposeful
-            activities designed to build the mentee’s confidence. An experience I rank above all personal and
-            professional
-            achievements.
-          </p>
-          
-          <br>
-    <br>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
-
 </body>
 
 </html>
