@@ -632,3 +632,11 @@ img { max-width: 100%; display: block; }
   .map td[data-k]::before { content: attr(data-k) "  "; white-space: pre; font-family: var(--f-mono); font-size: 10px; color: var(--ink-soft); }
   .map td:last-child[data-k]::before { color: var(--signal); }
 }
+
+/* unnumbered variant for principles */
+.steps.plain li { counter-increment: none; }
+.steps.plain li::before { display: none; }
+.steps.plain h3 { margin-top: 6px; }
+
+/* figure placeholder for a figure still to be supplied */
+.figs b.tbc { color: var(--ink-soft); }
