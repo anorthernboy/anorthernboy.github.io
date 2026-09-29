@@ -2,374 +2,239 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>a northern boy</title>
+  <meta name="description" content="Craig Weighman: design-led product generalist working across digital experience design and product management.">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.png" type="image/png">
 
-  <title>a northern boy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Geist+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
 
-  <script>
-
-    function reload() {
-      var perfEntries = performance.getEntriesByType("navigation");
-
-      if (window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // “Fear is the path to the Dark Side" - Yoda
-      }
-
-      if (perfEntries[0].type === "back_forward" || perfEntries[0].type === "reload") {
-        // location.reload(true);
-        window.scroll(0, 0);
-      }
-    }
-
-  </script>
-
+  <link rel="stylesheet" href="style/editorial.css">
 </head>
 
-<body onload="reload()"
-  style="font-family: 'Open Sans', sans-serif; text-decoration: none; color: #333333; background-color: #FAFAFA">
+<body>
+  <div class="page">
 
-  <div class="container nav-container header-slide"
-    style="position: sticky;
-      top: 0px; background-color: #FAFAFA; z-index: 9999; margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+    <header class="site-head grid">
+      <a class="wordmark" href="./" aria-current="page">a northern boy</a>
+      <nav class="nav" aria-label="Main">
+        <a href="pages/about.html">about</a>
+        <a href="#work">work</a>
+        <a href="#graphic">graphic</a>
+        <a href="pages/contact.html">contact</a>
+      </nav>
+    </header>
 
-    <div class="row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+    <main>
 
-      <div id="nav-overview" class="col-12 column-twelve"
-        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; ">
-
-        <div id="nav-overview-content">
-
-          <a href="index.html" style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #333333;">
-            <div>
-              a northern boy
-            </div>
-          </a>
-
+      <section class="home-hero">
+        <div class="hero-meta grid">
+          <div class="label">Craig Weighman<span>Designer, product generalist</span></div>
+          <div class="label">Practice<span>Digital experience &amp; product</span></div>
+          <div class="label">Based<span>Manchester, UK</span></div>
+          <div class="label">Status<span class="status">Open to new roles</span></div>
         </div>
-
-      </div>
-
-      <div id="nav-summary" class="col-12 column-twelve"
-        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px;">
-
-        <div id="nav-summary-content">
-
-          <a class="nav-button" href="./pages/about.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;"
-            onMouseOver="aboutShapeOver()" onMouseOut="aboutShapeOut()">
-            <span>
-              about
-            </span>
-          </a>
-
-          <a class="nav-button" href="./pages/work.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;"
-            onMouseOver="workShapeOver()" onMouseOut="workShapeOut()">
-            <span>
-              work
-            </span>
-          </a>
-          
-           <a class="nav-button" href="./pages/projects.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;"
-             onMouseOver="projectsShapeOver()" onMouseOut="projectsShapeOut()">
-            <span>
-              projects
-            </span>
-          </a>
-<!--
-          <a class="nav-button" href="other.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;"
-          onMouseOver="otherShapeOver()" onMouseOut="otherShapeOut()">
-            <span>
-              other
-            </span>
-          </a>
--->
+        <div class="home-mark-wrap grid">
+          <h1 class="home-mark"><span class="l1">a northern</span> <span class="l2">boy</span></h1>
+          <p class="home-intro">Design-led product generalist. I take eCommerce from the first question to the final QA pass, <em>and sweat the last ten percent.</em></p>
         </div>
+      </section>
 
-      </div>
+      <section class="section" id="work" aria-labelledby="h-work">
+        <div class="section-rule grid">
+          <h2 class="section-head label" id="h-work">Selected work<span>In-house, 2019 to now</span></h2>
+          <div class="section-body">
+            <ol class="index">
+              <li class="index-row">
+                <span class="yr mono">2023 – Now</span>
+                <h3>Reigning Champ</h3>
+                <div class="line">
+                  <p>Redesign and migration of reigningchamp.com to Shopify 2.0, with a design system in Figma.</p>
+                  <span class="soon">eCommerce · Design system · Case study soon</span>
+                </div>
+              </li>
+              <li class="index-row" data-peek="assets/home/avalanche-insights.webp">
+                <a class="cover-link" href="pages/avalanche-insights.html" aria-label="Avalanche Insights data exploration platform"></a>
+                <span class="yr mono">2022</span>
+                <h3>Avalanche Insights</h3>
+                <div class="line">
+                  <p>A zero-to-one data exploration platform, moving a consultancy from services to SaaS.</p>
+                  <span class="tags">UI/UX · Prototyping · Research</span>
+                </div>
+                <div class="thumb"><img src="assets/home/avalanche-insights.webp" alt="" loading="lazy" width="1394" height="952"></div>
+              </li>
+              <li class="index-row" data-peek="assets/TE-one.svg">
+                <a class="cover-link" href="pages/avalanche-analysis.html" aria-label="Avalanche Insights analysis tool redesign"></a>
+                <span class="yr mono">2022</span>
+                <h3>Avalanche Analysis</h3>
+                <div class="line">
+                  <p>End-to-end redesign of a human-in-the-loop machine learning flow for non-expert users.</p>
+                  <span class="tags">Interaction design · Design sprint</span>
+                </div>
+                <div class="thumb"><img src="assets/TE-one.svg" alt="" loading="lazy"></div>
+              </li>
+              <li class="index-row" data-peek="assets/home/goodbox-reporting.webp">
+                <a class="cover-link" href="pages/goodbox.html" aria-label="GoodBox transactions reporting suite"></a>
+                <span class="yr mono">2019 – 2021</span>
+                <h3>GoodBox Reporting</h3>
+                <div class="line">
+                  <p>KPIs and reporting that shaped strategy at a scaling startup, alongside a 30–40x rise in recurring revenue.</p>
+                  <span class="tags">UI/UX · SQL · Power BI</span>
+                </div>
+                <div class="thumb"><img src="assets/home/goodbox-reporting.webp" alt="" loading="lazy" width="1394" height="952"></div>
+              </li>
+              <li class="index-row" data-peek="assets/home/goodgiving.webp">
+                <a class="cover-link" href="pages/work.html" aria-label="GoodGiving"></a>
+                <span class="yr mono">2019 – 2021</span>
+                <h3>GoodGiving</h3>
+                <div class="line">
+                  <p>New product development consolidating digital fundraising tools into one platform.</p>
+                  <span class="tags">UI/UX · Research · MVP</span>
+                </div>
+                <div class="thumb"><img src="assets/home/goodgiving.webp" alt="" loading="lazy" width="1394" height="952"></div>
+              </li>
+              <li class="index-row" data-peek="assets/home/city-giving.webp">
+                <a class="cover-link" href="pages/work.html" aria-label="City Giving Day"></a>
+                <span class="yr mono">2020</span>
+                <h3>City Giving Day</h3>
+                <div class="line">
+                  <p>Participatory fundraising for 400+ corporations, with a real-time charity calculator.</p>
+                  <span class="tags">UI/UX · Prototyping · HTML/CSS/JS</span>
+                </div>
+                <div class="thumb"><img src="assets/home/city-giving.webp" alt="" loading="lazy" width="1394" height="952"></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
 
+      <section class="cover grid" aria-label="Featured: Avalanche Insights">
+        <div class="cover-meta">
+          <div class="label">Featured<span>Avalanche Insights, 2022</span></div>
+          <div class="label">Role<span>Product designer</span></div>
+        </div>
+        <h2 class="cover-title">zero<br>to one</h2>
+        <figure class="cover-img">
+          <img src="assets/home/avalanche-insights.webp" alt="Avalanche Insights platform shown on laptop and desktop screens" loading="lazy" width="1394" height="952">
+        </figure>
+        <div class="cover-side">
+          <p>Turning a consultancy's analysis process into a product anyone can use to explore themes in open-ended text.</p>
+          <a href="pages/avalanche-insights.html">Read the case study</a>
+        </div>
+      </section>
 
-    </div>
+      <section class="section" id="projects" aria-labelledby="h-projects">
+        <div class="section-rule grid">
+          <h2 class="section-head label" id="h-projects">Self-initiated<span>Studies &amp; concepts</span></h2>
+        </div>
+        <ul class="cards" style="margin-top: 36px;">
+          <li class="card wide">
+            <a class="cover-link" href="pages/lululemon.html" aria-label="lululemon"></a>
+            <div class="frame"><img src="assets/home/lululemon.webp" alt="" loading="lazy"></div>
+            <h3>lululemon</h3>
+            <p>Reimagining product recommendations as an end-to-end outfitting experience.</p>
+            <span class="tags">eCommerce · Ideation</span>
+          </li>
+          <li class="card wide">
+            <a class="cover-link" href="pages/arcteryx.html" aria-label="Arc'teryx"></a>
+            <div class="frame"><img src="assets/home/arcteryx.webp" alt="" loading="lazy"></div>
+            <h3>Arc'teryx</h3>
+            <p>Developing the product comparison feature with current and emerging technology.</p>
+            <span class="tags">eCommerce · Ideation</span>
+          </li>
+          <li class="card wide">
+            <a class="cover-link" href="pages/prevayl.html" aria-label="Prevayl"></a>
+            <div class="frame"><img src="assets/home/prevayl.webp" alt="" loading="lazy"></div>
+            <h3>Prevayl</h3>
+            <p>A strategic deep dive into the market potential of smart clothing.</p>
+            <span class="tags">Strategy · Vision</span>
+          </li>
+          <li class="card">
+            <a class="cover-link" href="pages/seemless.html" aria-label="seemless"></a>
+            <div class="frame"><img src="assets/home/seemless.webp" alt="" loading="lazy"></div>
+            <h3>seemless</h3>
+            <p>Crowdsourced fabric to cut overproduction in fashion.</p>
+            <span class="tags">Branding · Concept</span>
+          </li>
+          <li class="card">
+            <a class="cover-link" href="pages/spotify.html" aria-label="Spotify"></a>
+            <div class="frame"><img src="assets/home/spotify.webp" alt="" loading="lazy"></div>
+            <h3>Spotify</h3>
+            <p>K-means clustering on recommendations, and a control to tune them.</p>
+            <span class="tags">Data · Design thinking</span>
+          </li>
+          <li class="card">
+            <a class="cover-link" href="pages/pantrii.html" aria-label="Pantrii"></a>
+            <div class="frame"><img src="assets/home/pantrii.webp" alt="" loading="lazy"></div>
+            <h3>Pantrii</h3>
+            <p>A smart vending concept for less packaging waste.</p>
+            <span class="tags">Service · App</span>
+          </li>
+          <li class="card">
+            <a class="cover-link" href="pages/hoptions.html" aria-label="Hoptions"></a>
+            <div class="frame"><img src="assets/home/hoptions.webp" alt="" loading="lazy"></div>
+            <h3>Hoptions</h3>
+            <p>Craft beer recommendations built from your taste profile.</p>
+            <span class="tags">App · Concept</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="graphic" id="graphic" aria-labelledby="h-graphic">
+        <div class="page">
+          <div class="graphic-head grid">
+            <h2 class="label" id="h-graphic">Graphic<span>Experimental &amp; print</span></h2>
+            <div class="label">Off the clock<span>Posters, type and image-making outside product work</span></div>
+            <div class="label">Instagram<span>Updated regularly</span></div>
+          </div>
+          <a class="handle" href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener">@anorthernboy_____</a>
+          <ul class="feed">
+            <li><a href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener" aria-label="Post on Instagram"><div class="ph" data-label="01"></div></a></li>
+            <li><a href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener" aria-label="Post on Instagram"><div class="ph" data-label="02"></div></a></li>
+            <li><a href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener" aria-label="Post on Instagram"><div class="ph" data-label="03"></div></a></li>
+            <li><a href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener" aria-label="Post on Instagram"><div class="ph" data-label="04"></div></a></li>
+            <li><a href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener" aria-label="Post on Instagram"><div class="ph" data-label="05"></div></a></li>
+            <li><a href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener" aria-label="Post on Instagram"><div class="ph" data-label="06"></div></a></li>
+          </ul>
+          <div class="feed-note mono"><span>Placeholders until the posts are exported</span><a href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener">View all on Instagram ↗</a></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-foot grid" style="padding-top: clamp(96px, 12vw, 180px);">
+      <div class="big">Let's talk.<br><a href="pages/contact.html">Get in touch</a></div>
+      <div class="meta label">Manchester, UK<span>53°28′N 2°14′W</span></div>
+      <div class="base mono"><span>a northern boy</span><span>© 2026</span></div>
+    </footer>
 
   </div>
 
-  <div class="container body-container"
-    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div class="row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-      <div id="about" class="col-12 column-twelve about-slide"
-        style="border: 1px solid #333333; margin: 5px; height: 25vh; max-width: 1030px; padding: 0px; overflow: hidden; position: relative;"
-        onMouseOver="aboutShapeOver()" onMouseOut="aboutShapeOut()">
-
-        <a href="./pages/about.html">
-          <span style="position: absolute; width:100%; height:100%; top:0; left: 0; z-index: 1;"></span>
-        </a>
-
-        <div id="about-title" style="font-size: 1.5rem; font-weight: 200; position: relative; top: 1%; left: 1%;">
-          about
-        </div>
-
-        <div id="about-shape"
-          style="border: 1px solid #333333; margin: 0; height: 50vh; width: 50vh; position: relative; top: 1%; left: 70%;">
-        </div>
-
-        <!-- <div id="about-line"
-          style="border-left: 1px solid #333333; margin: 0; height: 1000vh; width: 1px; position: absolute; top: 40%; left: 85%;">
-        </div> -->
-
-        <div id="about-line"
-          style="border-top: 1px solid #333333; margin: 0; height: 1px; width: 1000vh; position: absolute; top: -10%; left: 70%; transform-origin: 0 100%; transform: rotate(150deg)">
-        </div>
-
-      </div>
-
-      <div id="work" class="col-12 column-twelve work-slide"
-        style="border: 1px solid #333333; margin: 5px; height: 25vh; max-width: 1030px; padding: 0px; overflow: hidden; position: relative;"
-        onMouseOver="workShapeOver()" onMouseOut="workShapeOut()">
-
-        <a href="./pages/work.html">
-          <span style="position: absolute; width:100%; height:100%; top:0; left: 0; z-index: 1;"></span>
-        </a>
-
-        <div id="work-title" style="font-size: 1.5rem; font-weight: 200; position: relative; top: 1%; left: 1%;">
-          work
-        </div>
-
-        <div id="work-shape"
-          style="border-radius: 100%; border: 1px solid #333333; margin: 0; height: 50vh; width: 50vh; position: relative; top: 25%; left: -20%;">
-        </div>
-
-        <!-- <div id="work-line"
-          style="border-top: 1px solid #333333; margin: 0; height: 1px; width: 1000vh; position: absolute; top: 75%; left: 60%">
-        </div> -->
-
-        <div id="work-line"
-          style="border-top: 1px solid #333333; margin: 0; height: 1px; width: 1000vh; position: absolute; top: -10%; left: 60%; transform-origin: 0 100%; transform: rotate(60deg)">
-        </div>
-
-      </div>
-
-      <div id="projects" class="col-12 column-twelve projects-slide"
-        style="border: 1px solid #333333; margin: 5px; height: 25vh; max-width: 1030px; padding: 0px; overflow: hidden; position: relative;"
-        onMouseOver="projectsShapeOver()" onMouseOut="projectsShapeOut()">
-
-        <a href="./pages/projects.html">
-          <span style="position: absolute; width:100%; height:100%; top:0; left: 0; z-index: 1;"></span>
-        </a>
-
-        <div id="projects-title" style="font-size: 1.5rem; font-weight: 200; position: relative; top: 1%; left: 1%;">
-          projects
-        </div>
-
-        <div id="projects-shape-one"
-          style="border-top: 1px solid #333333; margin: 0; height: 1px; width: 1000vh; position: absolute; top: 30%; left: 55%; transform-origin: 0 100%; transform: rotate(90deg)">
-        </div>
-
-        <div id="projects-shape-two"
-          style="border-top: 1px solid #333333; margin: 0; height: 1px; width: 1000vh; position: absolute; top: 30%; left: 55%; transform-origin: 0 100%; transform: rotate(30deg)">
-        </div>
-
-        <div id="projects-line"
-          style="border-left: 1px solid #333333; margin: 0; height: 1000vh; width: 1px; position: absolute; top: -10%; left: 40%;">
-        </div>
-
-      </div>
-<!--
-      <div id="projects" class="col-12 column-twelve projects-slide"
-        style="border: 1px solid #333333; margin: 5px; height: 25vh; max-width: 1030px; padding: 0px; overflow: hidden; position: relative;"
-        onMouseOver="projectsShapeOver()" onMouseOut="projectsShapeOut()">
-
-        <a href="./pages/projects.html">
-          <span style="position: absolute; width:100%; height:100%; top:0; left: 0; z-index: 1;"></span>
-        </a>
-
-        <div id="projects-title" style="font-size: 1.5rem; font-weight: 200; position: relative; top: 1%; left: 1%;">
-          projects
-        </div>
-
-        <div id="projects-shape"
-          style="border: 1px solid #333333; margin: 0; height: 50vh; width: 50vh; position: relative; top: 1%; left: 70%;">
-        </div>
-
-         <div id="about-line"
-          style="border-left: 1px solid #333333; margin: 0; height: 1000vh; width: 1px; position: absolute; top: 40%; left: 85%;">
-        </div> 
-
-        <div id="projects-line"
-          style="border-top: 1px solid #333333; margin: 0; height: 1px; width: 1000vh; position: absolute; top: -10%; left: 70%; transform-origin: 0 100%; transform: rotate(150deg)">
-        </div>
-
-      </div>
--->
-    </div>
-
-  </div>
-
+  <div class="peek" aria-hidden="true"><img alt=""></div>
 
   <script>
-
-    function aboutShapeOver() {
-      document.getElementById("about-title").style.left = "65%"
-      document.getElementById("about-title").style.top = "55%"
-      document.getElementById("about-title").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("about-shape").style.left = "-20%"
-      document.getElementById("about-shape").style.top = "40%"
-      document.getElementById("about-shape").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("about-line").style.left = "60%"
-      document.getElementById("about-line").style.top = "-70%"
-      document.getElementById("about-line").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("about").style.backgroundColor = '#f2f2f2'
-    }
-
-    function aboutShapeOut() {
-      document.getElementById("about-title").style.left = "1%"
-      document.getElementById("about-title").style.top = "1%"
-      document.getElementById("about-title").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("about-shape").style.left = "70%"
-      document.getElementById("about-shape").style.top = "1%"
-      document.getElementById("about-shape").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("about-line").style.left = "70%"
-      document.getElementById("about-line").style.top = "-1%"
-      document.getElementById("about-line").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("about").style.backgroundColor = '#fafafa'
-    }
-
-    function workShapeOver() {
-      document.getElementById("work-title").style.left = "65%"
-      document.getElementById("work-title").style.top = "55%"
-      document.getElementById("work-title").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("work-shape").style.left = "40%"
-      document.getElementById("work-shape").style.top = "-20%"
-      document.getElementById("work-shape").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("work-line").style.left = "35%"
-      document.getElementById("work-line").style.top = "-40%"
-      document.getElementById("work-line").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("work").style.backgroundColor = '#f2f2f2'
-    }
-
-    function workShapeOut() {
-      document.getElementById("work-title").style.left = "1%"
-      document.getElementById("work-title").style.top = "1%"
-      document.getElementById("work-title").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("work-shape").style.left = "-20%"
-      document.getElementById("work-shape").style.top = "25%"
-      document.getElementById("work-shape").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("work-line").style.left = "60%"
-      document.getElementById("work-line").style.top = "-10%"
-      document.getElementById("work-line").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("work").style.backgroundColor = '#fafafa'
-    }
-
-    function projectsShapeOver() {
-      document.getElementById("projects-title").style.left = "65%"
-      document.getElementById("projects-title").style.top = "55%"
-      document.getElementById("projects-title").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("projects-shape-one").style.left = "10%"
-      document.getElementById("projects-shape-one").style.top = "5%"
-      document.getElementById("projects-shape-one").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("projects-shape-two").style.left = "10%"
-      document.getElementById("projects-shape-two").style.top = "5%"
-      document.getElementById("projects-shape-two").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("projects-line").style.left = "90%"
-      document.getElementById("projects-line").style.top = "-50%"
-      document.getElementById("projects-line").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("projects").style.backgroundColor = '#f2f2f2'
-    }
-
-    function projectsShapeOut() {
-      document.getElementById("projects-title").style.left = "1%"
-      document.getElementById("projects-title").style.top = "1%"
-      document.getElementById("projects-title").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("projects-shape-one").style.left = "55%"
-      document.getElementById("projects-shape-one").style.top = "30%"
-      document.getElementById("projects-shape-one").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("projects-shape-two").style.left = "55%"
-      document.getElementById("projects-shape-two").style.top = "30%"
-      document.getElementById("projects-shape-two").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("projects-line").style.left = "40%"
-      document.getElementById("projects-line").style.top = "-10%"
-      document.getElementById("projects-line").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("projects").style.backgroundColor = '#fafafa'
-    }
-    
-        function otherShapeOver() {
-      document.getElementById("other-title").style.left = "65%"
-      document.getElementById("other-title").style.top = "55%"
-      document.getElementById("other-title").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("other-shape").style.left = "-20%"
-      document.getElementById("other-shape").style.top = "40%"
-      document.getElementById("other-shape").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("other-line").style.left = "60%"
-      document.getElementById("other-line").style.top = "-70%"
-      document.getElementById("other-line").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("other").style.backgroundColor = '#f2f2f2'
-    }
-
-    function otherShapeOut() {
-      document.getElementById("other-title").style.left = "1%"
-      document.getElementById("other-title").style.top = "1%"
-      document.getElementById("other-title").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("other-shape").style.left = "70%"
-      document.getElementById("other-shape").style.top = "1%"
-      document.getElementById("other-shape").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("other-line").style.left = "70%"
-      document.getElementById("other-line").style.top = "-1%"
-      document.getElementById("other-line").style.transition = "all 0.5s ease-out"
-
-      document.getElementById("other").style.backgroundColor = '#fafafa'
-    }
-
+    (function () {
+      var peek = document.querySelector('.peek');
+      var img = peek.querySelector('img');
+      if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      var x = 0, y = 0, raf = 0;
+      function place() { raf = 0; peek.style.left = x + 'px'; peek.style.top = y + 'px'; }
+      document.querySelectorAll('.index-row[data-peek]').forEach(function (row) {
+        row.addEventListener('mouseenter', function () { img.src = row.dataset.peek; peek.classList.add('on'); });
+        row.addEventListener('mouseleave', function () { peek.classList.remove('on'); });
+        row.addEventListener('mousemove', function (e) {
+          x = Math.min(e.clientX + 40 + peek.offsetWidth / 2, window.innerWidth - peek.offsetWidth / 2 - 16);
+          y = e.clientY;
+          if (!raf) raf = requestAnimationFrame(place);
+        });
+      });
+    })();
   </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
-
 </body>
 
 </html>
