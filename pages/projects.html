@@ -2,800 +2,356 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>projects</title>
+  <meta name="description" content="Projects by Craig Weighman: concepts, studies and shipped work in brief.">
 
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../favicon.png" type="image/png">
 
-  <title>projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Geist+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
 
-  <script>
-
-    function reload() {
-      var perfEntries = performance.getEntriesByType("navigation");
-
-      if (window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // “Fear is the path to the Dark Side" - Yoda
-      }
-
-      if (perfEntries[0].type === "back_forward" || perfEntries[0].type === "reload") {
-        // location.reload(true);
-        window.scroll(0, 0);
-      }
-    }
-
-  </script>
-
+  <link rel="stylesheet" href="../style/editorial.css">
 </head>
 
-<body onload="reload()"
-  style="font-family: 'Open Sans', sans-serif; text-decoration: none; color: #333333; background-color: #FAFAFA">
+<body>
+  <div class="page">
 
-  <!--<div class="animation-screen"></div>-->
+    <header class="site-head grid">
+      <a class="wordmark" href="../">a northern boy</a>
+      <nav class="nav" aria-label="Main">
+        <a href="about.html">about</a>
+        <a href="../#work">work</a>
+        <a href="projects.html" aria-current="page">projects</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </header>
 
-  <div class="container nav-container"
-    style="position: sticky;
-        top: 0px; background-color: #FAFAFA; z-index: 9999; margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
+    <main>
 
-    <div class="row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
+      <section class="cs-hero">
+        <div class="hero-meta grid">
+          <div class="label">Projects<span>Concepts, studies &amp; shipped work</span></div>
+          <div class="label">Format<span>In brief, no further reading</span></div>
+          <div class="label">Count<span>10 projects</span></div>
+          <div class="label">Case studies<span><a href="../#work">Three, in depth</a></span></div>
+        </div>
+        <h1 class="cs-title">projects</h1>
+      </section>
 
-      <div id="nav-overview" class="col-12 column-twelve"
-        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; ">
+      <section class="proj-intro grid">
+        <div class="label">Jump to</div>
+        <ul class="proj-toc">
+            <li><a href="#lululemon">lululemon</a></li>
+            <li><a href="#arcteryx">Arc'teryx</a></li>
+            <li><a href="#pantrii">Pantrii</a></li>
+            <li><a href="#spotify">Spotify</a></li>
+            <li><a href="#goodbox">GoodBox Reporting</a></li>
+            <li><a href="#seemless">seemless</a></li>
+            <li><a href="#goodgiving">GoodGiving</a></li>
+            <li><a href="#city-giving">City Giving Day</a></li>
+            <li><a href="#prevayl">Prevayl</a></li>
+            <li><a href="#hoptions">Hoptions</a></li>
+        </ul>
+      </section>
 
-        <div id="nav-overview-content">
-
-          <a href="../" style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #333333;">
-            <div>
-              a northern boy
+      <article class="proj" id="lululemon" aria-labelledby="t-lululemon">
+        <div class="proj-head grid">
+          <h2 id="t-lululemon">lululemon <span class="dash">–</span> Rethinking “you may also like” as head-to-toe outfitting.</h2>
+          <div class="label">Self-initiated</div>
+        </div>
+        <div class="gallery">
+          <div class="slides" tabindex="0" aria-label="lululemon images">
+            <figure class="slide"><img src="../assets/projects/lululemon/01.webp" alt="lululemon, image 1 of 8" width="1800" height="1289" loading="eager"></figure>
+            <figure class="slide"><img src="../assets/projects/lululemon/02.webp" alt="lululemon, image 2 of 8" width="1800" height="1289" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/lululemon/03.webp" alt="lululemon, image 3 of 8" width="1800" height="1289" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/lululemon/04.webp" alt="lululemon, image 4 of 8" width="1800" height="1289" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/lululemon/05.webp" alt="lululemon, image 5 of 8" width="1800" height="1289" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/lululemon/06.webp" alt="lululemon, image 6 of 8" width="1800" height="1289" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/lululemon/07.webp" alt="lululemon, image 7 of 8" width="1800" height="1290" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/lululemon/08.webp" alt="lululemon, image 8 of 8" width="1800" height="1289" loading="lazy"></figure>
+          </div>
+          <div class="g-bar">
+            <span class="g-count" aria-live="polite">1/8</span>
+            <div class="g-btns">
+              <button type="button" class="g-prev" aria-label="Previous image">←</button>
+              <button type="button" class="g-next" aria-label="Next image">→</button>
             </div>
-          </a>
-
+          </div>
         </div>
-
-      </div>
-
-      <div id="nav-summary" class="col-12 column-twelve"
-        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; ">
-
-        <div id="nav-summary-content">
-
-          <a class="nav-button" href="about.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
-            <span>
-              about
-            </span>
-          </a>
-
-          <a class="nav-button" href="work.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
-            <span>
-              work
-            </span>
-          </a>
-          
-           <a class="nav-button" href="projects.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
-            <span>
-              projects
-            </span>
-          </a>
-<!--
-          <a class="nav-button" href="projects.html"
-            style="font-size: 1.5rem; font-weight: 200; text-decoration: none; color: #707070;">
-            <span>
-              projects
-            </span>
-          </a>
--->
+        <div class="proj-body grid">
+          <p>Product pages recommend similar items, a pattern ripe for disruption. I sketched how lululemon could suggest complete looks instead, through outfit building, a smarter wishlist and filterable recommendations, to make browsing more inspiring and more personal.</p>
+          <div class="tags">eCommerce · Ideation · Sketching</div>
         </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-
-    <div class="container body-container lululemon first-section-slide"
-  style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-  <div class="row"
-    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div id="lululemon-image" class="col-lg-7 order-lg-2"
-      style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
-
-      <div id="arcteryx-image-content"
-        style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
-        <img class="product-image" src="../assets/lululemon.png" alt="lululemon">
-      </div>
-
-    </div>
-
-    <div id="lululemon-title" class="col-lg-3 order-lg-1 top-border"
-      style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
-      <br>
-
-      <div id="arcteryx-title-content" style="font-size: 1.5rem; font-weight: 200">
-        lululemon
-      </div>
-
-      <img class="swatch-vertical" src="../assets/lululemon-swatch-2x.png" alt="lululemon colour swatch vertical">
-
-      <img class="swatch-horizontal" src="../assets/lululemon-swatch-horizontal-2x.png"
-        alt="lululemon colour swatch horizontal">
-
-    </div>
-
-  </div>
-
-</div>
-
-<div class="container text-container lululemon second-section-slide"
-  style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-  <div class="row text-container-row"
-    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
-
-
-    <div id="arcteryx-overview" class="col-lg-3 text-container-col"
-      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
-
-      <div id="arcteryx-overview-content" style="position: relative;">
-        <!-- <br> -->
-
-        <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-          Elevating product recommendations to create an inspiring end-to-end outfitting ecosystem
-        </p>
-
-        <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
-          <span class="role-skill">UI/UX</span>
-          <span class="text-divide">|</span>
-          <span class="role-skill">Ecommerce</span>
-          <span class="text-divide">|</span>
-          <span class="role-skill">Ideation</span>
-        </p>
-
-      </div>
-
-    </div>
-
-    <div id="lululemon-summary" class="col-lg-7"
-      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
-
-      <div id="lululemon-summary-content">
-        <!-- <br> -->
-
-        <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-
-          lululemon utilises product recommendations - employing a content filtering recommender system to suggest similar products - 
-          to expose guests to a wider range of products, allowing them to discover new items that align with their preferences. 
-
-          <br><br>
-
-          In this project I explore how, by reimagining ecommerce recommendations, lululemon can provide a more personalised and engaging experience for 
-          their guests, setting themselves apart in a crowded market. See the outcome of my ideation <a href="lululemon.html"
-          style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
-          
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-  <div class="container body-container arcteryx third-section-slide"
-  style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-  <div class="row"
-    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div id="arcteryx-image" class="col-lg-7 order-lg-2"
-      style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
-
-      <div id="arcteryx-image-content"
-        style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
-        <img class="product-image" src="../assets/arcteryx.png" alt="arcteryx">
-      </div>
-
-    </div>
-
-    <div id="arcteryx-title" class="col-lg-3 order-lg-1 top-border"
-      style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
-      <br>
-
-      <div id="arcteryx-title-content" style="font-size: 1.5rem; font-weight: 200">
-        arc'teryx
-      </div>
-
-      <img class="swatch-vertical" src="../assets/arcteryx-swatch-2x.png" alt="arcteryx colour swatch vertical">
-
-      <img class="swatch-horizontal" src="../assets/arcteryx-swatch-horizontal-2x.png"
-        alt="arcteryx colour swatch horizontal">
-
-    </div>
-
-  </div>
-
-</div>
-
-<div class="container text-container arcteryx fourth-section-slide"
-  style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-  <div class="row text-container-row"
-    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
-
-
-    <div id="arcteryx-overview" class="col-lg-3 text-container-col"
-      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
-
-      <div id="arcteryx-overview-content" style="position: relative;">
-        <!-- <br> -->
-
-        <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-          Creative ideation exploring the development of an ecommerce product comparison feature
-        </p>
-
-        <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
-          <span class="role-skill">UI/UX</span>
-          <span class="text-divide">|</span>
-          <span class="role-skill">Ecommerce</span>
-          <span class="text-divide">|</span>
-          <span class="role-skill">Ideation</span>
-        </p>
-
-      </div>
-
-    </div>
-
-    <div id="arcteryx-summary" class="col-lg-7"
-      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
-
-      <div id="arcteryx-summary-content">
-        <!-- <br> -->
-
-        <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-
-          Arc’teryx’ ecommerce website hosts an innovative feature which allows users to compare up to three products. The implementation 
-          of this feature is functional, usable, accessible and presents an excellent case study in customer-centred design.
-
-          <br><br>
-
-          I wanted to explore the feature further and suggest some development opportunities utilising current and emerging technologies to enahnce the 
-          feature and contribute to a consistently excellent omnichannel customer experience. See the outcome of my ideation <a href="arcteryx.html"
-          style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
-          
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-  <div class="container body-container prevayl fourth-section-slide"
-  style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-  <div class="row"
-    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div id="prevayl-image" class="col-lg-7 order-lg-2"
-      style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
-
-      <div id="prevayl-image-content"
-        style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
-        <img class="product-image" src="../assets/prevayl.png" alt="prevayl">
-      </div>
-
-    </div>
-
-    <div id="prevayl-title" class="col-lg-3 order-lg-1 top-border"
-      style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
-      <br>
-
-      <div id="prevayl-title-content" style="font-size: 1.5rem; font-weight: 200">
-        prevayl
-      </div>
-
-      <img class="swatch-vertical" src="../assets/prevayl-swatch-2x.png" alt="prevayl colour swatch vertical">
-
-      <img class="swatch-horizontal" src="../assets/prevayl-swatch-horizontal-2x.png"
-        alt="prevayl colour swatch horizontal">
-
-    </div>
-
-  </div>
-
-</div>
-
-<div class="container text-container prevayl fourth-section-slide"
-  style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-  <div class="row text-container-row"
-    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
-
-
-    <div id="prevayl-overview" class="col-lg-3 text-container-col"
-      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
-
-      <div id="prevayl-overview-content" style="position: relative;">
-        <!-- <br> -->
-
-        <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-          Strategic deep-dive case study exploring the market potential of a revolutionary product
-        </p>
-
-        <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
-          <span class="role-skill">Strategy</span>
-          <span class="text-divide">|</span>
-          <span class="role-skill">Vision</span>
-          <span class="text-divide">|</span>
-          <span class="role-skill">Design Thinking</span>
-        </p>
-
-      </div>
-
-    </div>
-
-    <div id="prevayl-summary" class="col-lg-7"
-      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
-
-      <div id="prevayl-summary-content">
-        <!-- <br> -->
-
-        <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-          
-          Prevayl Smartwear is the world's most accurate smart clothing, integrating invisibly and taking complex body data to translate
-          into clear guidance that will have the maximum impact on improving health, fitness and wellbeing for the wearer.
-
-          <br><br>
-          
-          I was tasked with analysing Prevayl Smartwear to assess the impact the product will have on market conditions and the competitive climate in its industry.
-          Following this, I made considered recommendations on how to develop the product. See the outcome of my research <a href="prevayl.html"
-            style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
-          
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-<div class="container body-container seemless fourth-section-slide"
-style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-<div class="row"
-  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-  <div id="seemless-image" class="col-lg-7 order-lg-2"
-    style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
-
-    <div id="seemless-image-content"
-      style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
-      <img class="product-image" src="../assets/seemless.png" alt="seemless">
-    </div>
-
-  </div>
-
-  <div id="seemless-title" class="col-lg-3 order-lg-1 top-border"
-    style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
-    <br>
-
-    <div id="seemless-title-content" style="font-size: 1.5rem; font-weight: 200">
-      seemless
-    </div>
-
-    <img class="swatch-vertical" src="../assets/seemless-swatch-2x.png" alt="seemless colour swatch vertical">
-
-    <img class="swatch-horizontal" src="../assets/seemless-swatch-horizontal-2x.png"
-      alt="seemless colour swatch horizontal">
-
-  </div>
-
-</div>
-
-</div>
-
-<div class="container text-container seemless fourth-section-slide"
-style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-<div class="row text-container-row"
-  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
-
-
-  <div id="seemless-overview" class="col-lg-3 text-container-col"
-    style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
-
-    <div id="seemless-overview-content" style="position: relative;">
-      <!-- <br> -->
-
-      <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-        Disrupting inefficiencies within the fashion industry for a more sustainable future
-      </p>
-
-      <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
-        <span class="role-skill">UI/UX</span>
-        <span class="text-divide">|</span>
-        <span class="role-skill">Branding</span>
-        <span class="text-divide">|</span>
-        <span class="role-skill">Concept Design</span>
-      </p>
-
-    </div>
-
-  </div>
-
-  <div id="seemless-summary" class="col-lg-7"
-    style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
-
-    <div id="seemless-summary-content">
-      <!-- <br> -->
-
-      <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-        seemless is a proof-of-concept project addressing overproduction in the fashion
-        industry [<span style="font-style: italic;">reduce</span>,
-        reuse, recycle]. Research suggests that the profitable production of fabric requires over-commitment from
-        either consumer or producer in order to reach minimum production runs.
-        <br><br>
-        By crowdsourcing fabric, speculative production is reduced. Independent
-        designers can pool resource to access economies of scale and small
-        producers can access a
-        large consumer market for sustainable products. View the value proposition landing page <a
-          href="seemless.html"
-          style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
-      </p>
-      
-      <br>
-    <br>
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-
-  <div class="container body-container spotify fourth-section-slide"
-    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div class="row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-      <div id="spotify-image" class="col-lg-7 order-lg-2"
-        style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
-
-        <div id="spotify-image-content"
-          style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
-          <img class="product-image" src="../assets/spotify.png" alt="spotify">
+      </article>
+      <article class="proj" id="arcteryx" aria-labelledby="t-arcteryx">
+        <div class="proj-head grid">
+          <h2 id="t-arcteryx">Arc'teryx <span class="dash">–</span> Taking a great comparison feature further.</h2>
+          <div class="label">Self-initiated</div>
         </div>
-
-      </div>
-
-      <div id="spotify-title" class="col-lg-3 order-lg-1 top-border"
-        style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
-        <br>
-
-        <div id="spotify-title-content" style="font-size: 1.5rem; font-weight: 200">
-          spotify
+        <div class="gallery">
+          <div class="slides" tabindex="0" aria-label="Arc&#x27;teryx images">
+            <figure class="slide"><img src="../assets/projects/arcteryx/01.webp" alt="Arc&#x27;teryx, image 1 of 8" width="1800" height="1125" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/arcteryx/02.webp" alt="Arc&#x27;teryx, image 2 of 8" width="1800" height="1013" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/arcteryx/03.webp" alt="Arc&#x27;teryx, image 3 of 8" width="1800" height="1013" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/arcteryx/04.webp" alt="Arc&#x27;teryx, image 4 of 8" width="1800" height="1013" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/arcteryx/05.webp" alt="Arc&#x27;teryx, image 5 of 8" width="1800" height="1013" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/arcteryx/06.webp" alt="Arc&#x27;teryx, image 6 of 8" width="1800" height="1013" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/arcteryx/07.webp" alt="Arc&#x27;teryx, image 7 of 8" width="1800" height="1013" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/arcteryx/08.webp" alt="Arc&#x27;teryx, image 8 of 8" width="1800" height="1125" loading="lazy"></figure>
+          </div>
+          <div class="g-bar">
+            <span class="g-count" aria-live="polite">1/8</span>
+            <div class="g-btns">
+              <button type="button" class="g-prev" aria-label="Previous image">←</button>
+              <button type="button" class="g-next" aria-label="Next image">→</button>
+            </div>
+          </div>
         </div>
+        <div class="proj-body grid">
+          <p>Arc'teryx lets shoppers compare up to three products in a drawer without leaving the page. I explored where it could go next with current and emerging tech: quick filters, recommended picks, a “best for” view and a generative AI product expert.</p>
+          <div class="tags">eCommerce · Ideation · Generative AI</div>
+        </div>
+      </article>
+      <article class="proj" id="pantrii" aria-labelledby="t-pantrii">
+        <div class="proj-head grid">
+          <h2 id="t-pantrii">Pantrii <span class="dash">–</span> A smart vending machine for zero-waste living.</h2>
+          <div class="label">Concept</div>
+        </div>
+        <div class="gallery">
+          <div class="slides" tabindex="0" aria-label="Pantrii images">
+            <figure class="slide"><img src="../assets/projects/pantrii/01.webp" alt="Pantrii, image 1 of 5" width="1800" height="1587" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/pantrii/02.webp" alt="Pantrii, image 2 of 5" width="1765" height="1788" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/pantrii/03.webp" alt="Pantrii, image 3 of 5" width="1765" height="1788" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/pantrii/04.webp" alt="Pantrii, image 4 of 5" width="1765" height="1745" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/pantrii/05.webp" alt="Pantrii, image 5 of 5" width="1765" height="1745" loading="lazy"></figure>
+          </div>
+          <div class="g-bar">
+            <span class="g-count" aria-live="polite">1/5</span>
+            <div class="g-btns">
+              <button type="button" class="g-prev" aria-label="Previous image">←</button>
+              <button type="button" class="g-next" aria-label="Next image">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body grid">
+          <p>Food and plastic are the biggest categories of household waste. Pantrii is a proof of concept for smart vending machines in city apartment blocks, stocked with store-cupboard staples and paired with an app to track purchases and progress.</p>
+          <div class="tags">Service design · App · Sketching</div>
+        </div>
+      </article>
+      <article class="proj" id="spotify" aria-labelledby="t-spotify">
+        <div class="proj-head grid">
+          <h2 id="t-spotify">Spotify <span class="dash">–</span> What if you could tune your own recommendations?</h2>
+          <div class="label">Self-initiated</div>
+        </div>
+        <div class="gallery">
+          <div class="slides" tabindex="0" aria-label="Spotify images">
+            <figure class="slide"><img src="../assets/projects/spotify/01.webp" alt="Spotify, image 1 of 6" width="1022" height="702" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/spotify/02.webp" alt="Spotify, image 2 of 6" width="615" height="457" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/spotify/03.webp" alt="Spotify, image 3 of 6" width="918" height="336" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/spotify/04.webp" alt="Spotify, image 4 of 6" width="904" height="516" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/spotify/05.webp" alt="Spotify, image 5 of 6" width="904" height="540" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/spotify/06.webp" alt="Spotify, image 6 of 6" width="904" height="516" loading="lazy"></figure>
+          </div>
+          <div class="g-bar">
+            <span class="g-count" aria-live="polite">1/6</span>
+            <div class="g-btns">
+              <button type="button" class="g-prev" aria-label="Previous image">←</button>
+              <button type="button" class="g-next" aria-label="Next image">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body grid">
+          <p>Using the Spotify API and k-means clustering, I tested a hunch that recommendations lean too heavily on popularity. My own playlists turned out to be consistent in sound rather than artist, so I proposed a control that lets listeners adjust the engine.</p>
+          <div class="tags">Data · Clustering · Design thinking</div>
+        </div>
+      </article>
+      <article class="proj" id="goodbox" aria-labelledby="t-goodbox">
+        <div class="proj-head grid">
+          <h2 id="t-goodbox">GoodBox Reporting <span class="dash">–</span> Finding the number the business was missing.</h2>
+          <div class="label">The GoodBox Co, 2019 – 2021</div>
+        </div>
+        <div class="gallery">
+          <div class="slides" tabindex="0" aria-label="GoodBox Reporting images">
+            <figure class="slide"><img src="../assets/projects/goodbox/01.webp" alt="GoodBox Reporting, image 1 of 6" width="1800" height="976" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/goodbox/02.webp" alt="GoodBox Reporting, image 2 of 6" width="1403" height="1800" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/goodbox/03.webp" alt="GoodBox Reporting, image 3 of 6" width="1800" height="563" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/goodbox/04.webp" alt="GoodBox Reporting, image 4 of 6" width="1800" height="843" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/goodbox/05.webp" alt="GoodBox Reporting, image 5 of 6" width="1800" height="1050" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/goodbox/06.webp" alt="GoodBox Reporting, image 6 of 6" width="1800" height="1380" loading="lazy"></figure>
+          </div>
+          <div class="g-bar">
+            <span class="g-count" aria-live="polite">1/6</span>
+            <div class="g-btns">
+              <button type="button" class="g-prev" aria-label="Previous image">←</button>
+              <button type="button" class="g-next" aria-label="Next image">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body grid">
+          <p>I built live transaction dashboards in SQL and Power BI for a scaling fundraising startup. They showed the business was falling 10x short on its core KPI, donations per device per day. That triggered a strategic pivot and a 30–40x rise in recurring revenue.</p>
+          <div class="tags">Product management · SQL · Power BI</div>
+        </div>
+      </article>
+      <article class="proj" id="seemless" aria-labelledby="t-seemless">
+        <div class="proj-head grid">
+          <h2 id="t-seemless">seemless <span class="dash">–</span> Crowdsourced fabric to cut fashion overproduction.</h2>
+          <div class="label">Concept</div>
+        </div>
+        <div class="gallery">
+          <div class="slides" tabindex="0" aria-label="seemless images">
+            <figure class="slide"><img src="../assets/projects/seemless/01.webp" alt="seemless, image 1 of 5" width="1800" height="1125" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/seemless/02.webp" alt="seemless, image 2 of 5" width="1800" height="1125" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/seemless/03.webp" alt="seemless, image 3 of 5" width="1800" height="1125" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/seemless/04.webp" alt="seemless, image 4 of 5" width="1800" height="1125" loading="lazy"></figure>
+            <figure class="slide"><img src="../assets/projects/seemless/05.webp" alt="seemless, image 5 of 5" width="1800" height="1229" loading="lazy"></figure>
+          </div>
+          <div class="g-bar">
+            <span class="g-count" aria-live="polite">1/5</span>
+            <div class="g-btns">
+              <button type="button" class="g-prev" aria-label="Previous image">←</button>
+              <button type="button" class="g-next" aria-label="Next image">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body grid">
+          <p>Profitable fabric runs demand big minimum orders. seemless lets independent designers pool demand to reach them, reducing speculative production. I designed the brand, the value proposition landing page and a dashboard.</p>
+          <div class="tags">Branding · Concept · UI</div>
+        </div>
+      </article>
+      <article class="proj" id="goodgiving" aria-labelledby="t-goodgiving">
+        <div class="proj-head grid">
+          <h2 id="t-goodgiving">GoodGiving <span class="dash">–</span> One place for a charity’s digital fundraising.</h2>
+          <div class="label">The GoodBox Co, 2019 – 2021</div>
+        </div>
+        <div class="gallery" data-single>
+          <div class="slides" tabindex="0" aria-label="GoodGiving images">
+            <figure class="slide"><img src="../assets/projects/goodgiving/01.webp" alt="GoodGiving, image 1 of 1" width="1800" height="1229" loading="lazy"></figure>
+          </div>
+          <div class="g-bar">
+            <span class="g-count" aria-live="polite">1/1</span>
+            <div class="g-btns">
+              <button type="button" class="g-prev" aria-label="Previous image">←</button>
+              <button type="button" class="g-next" aria-label="Next image">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body grid">
+          <p>As product manager and designer, I took a payment platform from client interviews to beta. It consolidated charities’ digital fundraising tools for financial reporting, and was built for A/B testing to learn what makes donors convert.</p>
+          <div class="tags">Product management · Research · MVP</div>
+        </div>
+      </article>
+      <article class="proj" id="city-giving" aria-labelledby="t-city-giving">
+        <div class="proj-head grid">
+          <h2 id="t-city-giving">City Giving Day <span class="dash">–</span> Participatory fundraising for 400+ corporations.</h2>
+          <div class="label">The GoodBox Co, 2020</div>
+        </div>
+        <div class="gallery" data-single>
+          <div class="slides" tabindex="0" aria-label="City Giving Day images">
+            <figure class="slide"><img src="../assets/projects/city-giving/01.webp" alt="City Giving Day, image 1 of 1" width="1800" height="1229" loading="lazy"></figure>
+          </div>
+          <div class="g-bar">
+            <span class="g-count" aria-live="polite">1/1</span>
+            <div class="g-btns">
+              <button type="button" class="g-prev" aria-label="Previous image">←</button>
+              <button type="button" class="g-next" aria-label="Next image">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body grid">
+          <p>For the Lord Mayor’s Appeal, I designed and built an MVP in HTML, CSS and JavaScript. Colleagues nominated each other for challenges, and a real-time calculator showed the impact of each donation.</p>
+          <div class="tags">Frontend · Prototyping · UI</div>
+        </div>
+      </article>
+      <article class="proj" id="prevayl" aria-labelledby="t-prevayl">
+        <div class="proj-head grid">
+          <h2 id="t-prevayl">Prevayl <span class="dash">–</span> Sizing up the market for smart clothing.</h2>
+          <div class="label">Strategy</div>
+        </div>
+        <div class="gallery" data-single>
+          <div class="slides" tabindex="0" aria-label="Prevayl images">
+            <figure class="slide"><img src="../assets/projects/prevayl/01.webp" alt="Prevayl, image 1 of 1" width="1800" height="1229" loading="lazy"></figure>
+          </div>
+          <div class="g-bar">
+            <span class="g-count" aria-live="polite">1/1</span>
+            <div class="g-btns">
+              <button type="button" class="g-prev" aria-label="Previous image">←</button>
+              <button type="button" class="g-next" aria-label="Next image">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body grid">
+          <p>Prevayl makes smart clothing that turns body data into health and fitness guidance. I assessed how the product could shift its market and competitors, then recommended how to develop it.</p>
+          <div class="tags">Strategy · Vision · Design thinking</div>
+        </div>
+      </article>
+      <article class="proj" id="hoptions" aria-labelledby="t-hoptions">
+        <div class="proj-head grid">
+          <h2 id="t-hoptions">Hoptions <span class="dash">–</span> Craft beer picked for your taste.</h2>
+          <div class="label">Concept</div>
+        </div>
+        <div class="gallery" data-single>
+          <div class="slides" tabindex="0" aria-label="Hoptions images">
+            <figure class="slide"><img src="../assets/projects/hoptions/01.webp" alt="Hoptions, image 1 of 1" width="1022" height="702" loading="lazy"></figure>
+          </div>
+          <div class="g-bar">
+            <span class="g-count" aria-live="polite">1/1</span>
+            <div class="g-btns">
+              <button type="button" class="g-prev" aria-label="Previous image">←</button>
+              <button type="button" class="g-next" aria-label="Next image">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="proj-body grid">
+          <p>An app that builds a taste profile from the beers you like, then uses image recognition and recommendations to find your next one.</p>
+          <div class="tags">App · Concept · UI</div>
+        </div>
+      </article>
 
-        <img class="swatch-vertical" src="../assets/spotify-swatch-2x.png" alt="spotify colour swatch vertical">
+    </main>
 
-        <img class="swatch-horizontal" src="../assets/spotify-swatch-horizontal-2x.png"
-          alt="spotify colour swatch horizontal">
-
-      </div>
-
-    </div>
+    <footer class="site-foot grid" style="padding-top: clamp(120px, 14vw, 200px);">
+      <div class="big">Let's talk.<br><a href="contact.html">Get in touch</a></div>
+      <div class="meta label">Manchester, UK<span>53°28′N 2°14′W</span></div>
+      <div class="base mono"><span>a northern boy</span><span>© 2026</span></div>
+    </footer>
 
   </div>
 
-  
-  <div class="container text-container spotify fourth-section-slide"
-    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div class="row text-container-row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
-
-
-      <div id="spotify-overview" class="col-lg-3 text-container-col"
-        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
-
-        <div id="spotify-overview-content" style="position: relative;">
-          <!-- <br> -->
-
-          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-            Exploring recommendation algorithms in Spotify from an opinionated users perspective
-          </p>
-
-          <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
-            <span class="role-skill">UI/UX</span>
-            <span class="text-divide">|</span>
-            <span class="role-skill">Clustering</span>
-            <span class="text-divide">|</span>
-            <span class="role-skill">Design Thinking</span>
-          </p>
-
-        </div>
-
-      </div>
-
-      <div id="spotify-summary" class="col-lg-7"
-        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
-
-        <div id="spotify-summary-content">
-          <!-- <br> -->
-
-          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-            An investigation into Spotify recommendations using the statistical analysis technique
-            k-means
-            clustering. My hypothesis posits there is a heavy weighting toward popularity in the
-            app which results in a failure to handle artist complexity and disappoints a defined user persona.
-            <br><br>
-            Using the Spotify API, I found that my own playlists were much more <span
-              style="font-style: italic;">sonically consistent</span>: similarity within tracks rather than artists. I
-            used the findings to
-            propose a
-            feature whereby the user can adjust the recommendation engine. Find out more about the proposal <a
-              href="spotify.html"
-              style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
-
-          </p>
-
-          <br>
-    <br>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!--
-  
-  <div class="container body-container pantrii fourth-section-slide"
-    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div class="row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-      <div id="pantrii-image" class="col-lg-7 order-lg-2"
-        style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
-
-        <div id="pantrii-image-content"
-          style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
-          <img class="product-image" src="../assets/pantrii.png" alt="pantrii">
-        </div>
-
-      </div>
-
-      <div id="pantrii-title" class="col-lg-3 order-lg-1 top-border"
-        style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
-        <br>
-
-        <div id="pantrii-title-content" style="font-size: 1.5rem; font-weight: 200">
-          pantrii
-        </div>
-
-        <img class="swatch-vertical" src="../assets/pantrii-swatch-2x.png" alt="pantrii colour swatch vertical">
-
-        <img class="swatch-horizontal" src="../assets/pantrii-swatch-horizontal-2x.png"
-          alt="pantrii colour swatch horizontal">
-
-      </div>
-
-    </div>
-
-  </div>
-
-  
-  <div class="container text-container pantrii fourth-section-slide"
-    style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div class="row text-container-row"
-      style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
-
-
-      <div id="pantrii-overview" class="col-lg-3 text-container-col"
-        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
-
-        <div id="pantrii-overview-content" style="position: relative;">
-
-          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-            Enabling positive consumer behaviour change in relation to waste consciousness
-          </p>
-
-          <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
-            <span class="role-skill">UI/UX</span>
-            <span class="text-divide">|</span>
-            <span class="role-skill">Prototyping</span>
-            <span class="text-divide">|</span>
-            <span class="role-skill">Design Sprint</span>
-          </p>
-
-        </div>
-
-      </div>
-
-      <div id="pantrii-summary" class="col-lg-7"
-        style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
-
-        <div id="pantrii-summary-content">
-
-          <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-            For conscious consumers who want to reduce household waste <span
-              style="font-style: italic;">Pantrii</span> is a tech-powered store cupboard 
-            that empowers consumers to buy less, waste less. Unlike traditional zero-waste stores 
-            <span
-              style="font-style: italic;">Pantrii</span> is available in residential developments in major cities across North America.
-            <br><br>
-           Pantrii is a self-directed design sprint exploring how hardware and software can coincide to help people be 
-            more conscious about the waste they generate. 
-            The outcome is a low-fidelity prototype which acts as a proof-of-concept communication tool. Follow the design thinking process <a
-              href="pantrii.html"
-              style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
-
-
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
--->
-
-  <!--
-
-  <div class="container body-container hoptions fourth-section-slide"
-  style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-  <div class="row"
-    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: flex-start;">
-
-    <div id="hoptions-image" class="col-lg-7 order-lg-2"
-      style="border-top: 1px solid #333333; margin: 15px; padding: 0px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;">
-
-      <div id="hoptions-image-content"
-        style="padding: 5vmin; display: flex; justify-content: center; align-items: center;">
-        <img class="product-image" src="../assets/hoptions.png" alt="hoptions">
-      </div>
-
-    </div>
-
-    <div id="hoptions-title" class="col-lg-3 order-lg-1 top-border"
-      style="margin: 15px; padding: 0px; overflow: hidden; position: relative;">
-      <br>
-
-      <div id="hoptions-title-content" style="font-size: 1.5rem; font-weight: 200">
-        hoptions
-      </div>
-
-      <img class="swatch-vertical" src="../assets/hoptions-swatch-2x.png" alt="hoptions colour swatch vertical">
-
-      <img class="swatch-horizontal" src="../assets/hoptions-swatch-horizontal-2x.png"
-        alt="hoptions colour swatch horizontal">
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
-<div class="container text-container hoptions fourth-section-slide"
-  style="margin: 0px auto; width: 100vw; display: flex; justify-content: center; align-items: flex-start;">
-
-  <div class="row text-container-row"
-    style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: stretch;">
-
-
-    <div id="hoptions-overview" class="col-lg-3 text-container-col"
-      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; display: flex; align-items: stretch;">
-
-      <div id="hoptions-overview-content" style="position: relative;">
-        
-
-        <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-          Removing barriers to the very best craft beer using mobile image recognition technology
-        </p>
-
-        <p class="role-text" style="font-size: 1rem; font-weight: 100; position: absolute; bottom: 0;">
-          <span class="role-skill">UI/UX</span>
-          <span class="text-divide">|</span>
-          <span class="role-skill">React Native</span>
-          <span class="text-divide">|</span>
-          <span class="role-skill">GraphQL</span>
-        </p>
-
-      </div>
-
-    </div>
-
-    <div id="hoptions-summary" class="col-lg-7"
-      style="margin: 0 15px; padding:0px;overflow:hidden; position: relative;">
-
-      <div id="hoptions-summary-content">
-       
-
-        <p class="first-line-text" style="font-size: 1rem; font-weight: 100;">
-          Hoptions is a solution developed to address the problem of decision fatigue in the experience of purchasing
-          and
-          consuming craft beer. User research identified the emotions experienced by the consumer:
-          overwhelming
-          choice, a desire to try something, before settling for a known beer.
-          <br><br>
-          Hoptions' recommendation algorithm and image recognition technology finds new beers based on
-          user
-          preferences. Users can filter recommendations by brewery, category - even hops type. Share user profile
-          with
-          friends to build
-          the perfect <span style="font-style: italic;">round of beers</span>. See the
-          MVP in action <a href="hoptions.html"
-            style="font-weight: 400; text-decoration: none; color: #333333;"><span>here</span></a>.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
--->
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
-
+  <script>
+    document.querySelectorAll('.gallery').forEach(function (g) {
+      var track = g.querySelector('.slides');
+      var slides = track.children;
+      var n = slides.length;
+      var count = g.querySelector('.g-count');
+      var prev = g.querySelector('.g-prev');
+      var next = g.querySelector('.g-next');
+      function index() { return Math.round(track.scrollLeft / track.clientWidth); }
+      function update() {
+        var i = index();
+        count.textContent = (i + 1) + '/' + n;
+        prev.disabled = i <= 0;
+        next.disabled = i >= n - 1;
+      }
+      function go(d) {
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        track.scrollTo({ left: (index() + d) * track.clientWidth, behavior: reduce ? 'auto' : 'smooth' });
+      }
+      prev.addEventListener('click', function () { go(-1); });
+      next.addEventListener('click', function () { go(1); });
+      track.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight') { e.preventDefault(); go(1); }
+        if (e.key === 'ArrowLeft') { e.preventDefault(); go(-1); }
+      });
+      var t;
+      track.addEventListener('scroll', function () { clearTimeout(t); t = setTimeout(update, 60); });
+      window.addEventListener('resize', update);
+      update();
+    });
+  </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
