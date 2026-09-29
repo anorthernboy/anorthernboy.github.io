@@ -21,132 +21,106 @@
   <div class="page">
 
     <header class="site-head grid">
-      <a class="wordmark" href="./" aria-current="page">a northern boy</a>
+      <div class="who">
+        <a class="wordmark" href="./" aria-current="page">a northern boy</a>
+        <span class="clock" id="clock">Manchester, UK</span>
+      </div>
       <nav class="nav" aria-label="Main">
         <a href="pages/about.html">about</a>
         <a href="#work">work</a>
         <a href="pages/projects.html">projects</a>
-        <a href="pages/contact.html">contact</a>
+        <a href="#hello">contact</a>
       </nav>
     </header>
 
     <main>
 
-      <section class="home-hero">
-        <div class="hero-meta grid">
-          <div class="label">Craig Weighman<span>Designer, product generalist</span></div>
-          <div class="label">Practice<span>Digital experience &amp; product</span></div>
-          <div class="label">Based<span>Manchester, UK</span></div>
-          <div class="label">Status<span class="status">Open to new roles</span></div>
+      <section class="h2-hero grid">
+        <div class="copy">
+          <h1>Designer <span class="g">taking digital products from</span> research <span class="g">to</span> release<span class="dot">.</span></h1>
+          <p>Design-led product generalist with over ten years in product, leading eCommerce from the first question to the final QA pass.</p>
         </div>
-        <div class="home-mark-wrap grid">
-          <h1 class="home-mark"><span class="l1">a northern</span> <span class="l2">boy</span></h1>
-          <p class="home-intro">Design-led product generalist. I take eCommerce from the first question to the final QA pass, <em>and sweat the last ten percent.</em></p>
+        <div class="ph portrait" data-label="Portrait / 4:5" role="img" aria-label="Portrait of Craig (placeholder)"></div>
+      </section>
+
+      <div class="ph feature" data-label="Featured work, Reigning Champ / 21:9" role="img" aria-label="Featured work (placeholder)"></div>
+
+      <section class="row2 grid" aria-labelledby="h-info">
+        <h2 class="label" id="h-info">Info</h2>
+        <div class="body">
+          <p>I'm Craig Weighman, a designer based in Manchester. I've worked across eCommerce, SaaS and tech for good, as both designer and product manager.</p>
+          <a class="more" href="pages/about.html">More about me</a>
         </div>
       </section>
 
-      <section class="section" id="work" aria-labelledby="h-work">
-        <div class="section-rule grid">
-          <h2 class="section-head label" id="h-work">Case studies<span>Three, in depth</span></h2>
-          <div class="section-body">
-            <ol class="index">
-              <li class="index-row">
-                <a class="cover-link" href="pages/reigning-champ.html" aria-label="Reigning Champ: Shopify 2.0 and page redesign"></a>
-                <span class="yr mono">2023 – Now</span>
-                <h3>Reigning Champ</h3>
-                <div class="line">
-                  <p>Shopify 2.0 migration and a collection and product page redesign, holding a 2.0% conversion target.</p>
-                  <span class="tags">eCommerce · Design system · Research</span>
-                </div>
-              </li>
-              <li class="index-row" data-peek="assets/home/avalanche-insights.webp">
-                <a class="cover-link" href="pages/avalanche-insights.html" aria-label="Avalanche Insights data exploration platform"></a>
-                <span class="yr mono">2021 – 2022</span>
-                <h3>Avalanche Insights</h3>
-                <div class="line">
-                  <p>Finding the customer and their problem, then designing a zero-to-one platform on a blank canvas.</p>
-                  <span class="tags">Research · Product design · SaaS</span>
-                </div>
-                <div class="thumb"><img src="assets/home/avalanche-insights.webp" alt="" loading="lazy" width="1394" height="952"></div>
-              </li>
-              <li class="index-row" data-peek="assets/TE-one.svg">
-                <a class="cover-link" href="pages/avalanche-analysis.html" aria-label="Avalanche Insights analysis tool redesign"></a>
-                <span class="yr mono">2022</span>
-                <h3>Avalanche Analysis</h3>
-                <div class="line">
-                  <p>Replacing a failing analysis tool in a two-week design sprint, tested head to head against the original.</p>
-                  <span class="tags">Design sprint · Interaction design</span>
-                </div>
-                <div class="thumb"><img src="assets/TE-one.svg" alt="" loading="lazy"></div>
-              </li>
-            </ol>
-          </div>
+      <section class="row2 grid" aria-labelledby="h-do">
+        <h2 class="label" id="h-do">What I do</h2>
+        <div class="body" style="grid-column: 1 / -1;">
+          <ol class="services">
+            <li>
+              <svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="24" cy="24" r="14"/><path d="M34 34 L48 48"/></svg>
+              <h3>Research</h3>
+              <b>Understand first.</b>
+              <p>Interviews, surveys and analytics that find the real problem.</p>
+            </li>
+            <li>
+              <svg viewBox="0 0 56 56" aria-hidden="true"><rect x="8" y="8" width="40" height="40"/><path d="M8 20 H48 M20 20 V48"/></svg>
+              <h3>UX / UI</h3>
+              <b>Clear, calm, considered.</b>
+              <p>Flows and interfaces that feel simple to use.</p>
+            </li>
+            <li>
+              <svg viewBox="0 0 56 56" aria-hidden="true"><rect x="6" y="6" width="18" height="18"/><rect x="32" y="6" width="18" height="18"/><rect x="6" y="32" width="18" height="18"/><circle cx="41" cy="41" r="9"/></svg>
+              <h3>Design systems</h3>
+              <b>Built to scale.</b>
+              <p>Components that help teams ship faster and stay consistent.</p>
+            </li>
+            <li>
+              <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M6 44 L20 28 L30 36 L48 14"/><path d="M38 14 H48 V24"/></svg>
+              <h3>Product</h3>
+              <b>From roadmap to release.</b>
+              <p>Priorities, delivery and QA, measured after launch.</p>
+            </li>
+          </ol>
         </div>
       </section>
 
-      <section class="cover grid" aria-label="Featured: Avalanche Insights">
-        <div class="cover-meta">
-          <div class="label">Featured<span>Avalanche Insights, 2022</span></div>
-          <div class="label">Role<span>Product designer</span></div>
+      <section class="row2 grid" id="work" aria-labelledby="h-work">
+        <h2 class="label" id="h-work">Work</h2>
+        <div class="body">
+          <p>Three case studies across eCommerce and SaaS.</p>
+          <a class="more" href="pages/projects.html">View all projects</a>
         </div>
-        <h2 class="cover-title">zero<br>to one</h2>
-        <figure class="cover-img">
-          <img src="assets/home/avalanche-insights.webp" alt="Avalanche Insights platform shown on laptop and desktop screens" loading="lazy" width="1394" height="952">
-        </figure>
-        <div class="cover-side">
-          <p>Turning a consultancy's analysis process into a product anyone can use to explore themes in open-ended text.</p>
-          <a href="pages/avalanche-insights.html">Read the case study</a>
-        </div>
+        <ul class="tiles" style="grid-column: 1 / -1;">
+          <li class="tile">
+            <a class="cover-link" href="pages/reigning-champ.html" aria-label="Reigning Champ"></a>
+            <div class="img ph" data-label="Reigning Champ / 4:5"></div>
+            <h3>Reigning Champ</h3>
+            <span>eCommerce, Shopify</span>
+          </li>
+          <li class="tile">
+            <a class="cover-link" href="pages/avalanche-insights.html" aria-label="Avalanche Insights"></a>
+            <div class="img"><img src="assets/home/av-summary.webp" alt="" loading="lazy"></div>
+            <h3>Avalanche Insights</h3>
+            <span>SaaS, Research</span>
+          </li>
+          <li class="tile">
+            <a class="cover-link" href="pages/avalanche-analysis.html" aria-label="Avalanche Analysis"></a>
+            <div class="img"><img src="assets/home/av-explore.webp" alt="" loading="lazy"></div>
+            <h3>Avalanche Analysis</h3>
+            <span>Design sprint, AI</span>
+          </li>
+        </ul>
       </section>
 
-      <section class="section" id="projects" aria-labelledby="h-projects">
-        <div class="section-rule grid">
-          <h2 class="section-head label" id="h-projects">Projects<span>In brief</span></h2>
-          <div class="section-body" style="display: flex; justify-content: flex-end;"><a class="label" href="pages/projects.html" style="border-bottom: 1px solid currentColor;">All ten projects →</a></div>
-        </div>
-        <ul class="cards" style="margin-top: 36px;">
-          <li class="card wide">
-            <a class="cover-link" href="pages/projects.html#lululemon" aria-label="lululemon"></a>
-            <div class="frame"><img src="assets/projects/lululemon/01.webp" alt="" loading="lazy"></div>
-            <h3>lululemon</h3>
-            <p>Recommendations as head-to-toe outfitting.</p>
-            <span class="tags">eCommerce · Ideation</span>
-          </li>
-          <li class="card wide">
-            <a class="cover-link" href="pages/projects.html#arcteryx" aria-label="Arc'teryx"></a>
-            <div class="frame"><img src="assets/projects/arcteryx/01.webp" alt="" loading="lazy"></div>
-            <h3>Arc'teryx</h3>
-            <p>Taking a great comparison feature further.</p>
-            <span class="tags">eCommerce · Generative AI</span>
-          </li>
-          <li class="card wide">
-            <a class="cover-link" href="pages/projects.html#pantrii" aria-label="Pantrii"></a>
-            <div class="frame"><img src="assets/projects/pantrii/01.webp" alt="" loading="lazy"></div>
-            <h3>Pantrii</h3>
-            <p>A smart vending machine for zero-waste living.</p>
-            <span class="tags">Service design · App</span>
-          </li>
-          <li class="card wide">
-            <a class="cover-link" href="pages/projects.html#spotify" aria-label="Spotify"></a>
-            <div class="frame"><img src="assets/projects/spotify/01.webp" alt="" loading="lazy"></div>
-            <h3>Spotify</h3>
-            <p>What if you could tune your own recommendations?</p>
-            <span class="tags">Data · Design thinking</span>
-          </li>
-          <li class="card wide">
-            <a class="cover-link" href="pages/projects.html#goodbox" aria-label="GoodBox Reporting"></a>
-            <div class="frame"><img src="assets/projects/goodbox/01.webp" alt="" loading="lazy"></div>
-            <h3>GoodBox Reporting</h3>
-            <p>Finding the number the business was missing.</p>
-            <span class="tags">Product · SQL · Power BI</span>
-          </li>
-          <li class="card wide">
-            <a class="cover-link" href="pages/projects.html#seemless" aria-label="seemless"></a>
-            <div class="frame"><img src="assets/projects/seemless/01.webp" alt="" loading="lazy"></div>
-            <h3>seemless</h3>
-            <p>Crowdsourced fabric to cut overproduction.</p>
-            <span class="tags">Branding · Concept</span>
-          </li>
+      <section class="clients" aria-label="Where I've worked">
+        <ul>
+          <li>Reigning Champ</li>
+          <li class="mono">Avalanche Insights</li>
+          <li class="serif">The GoodBox Co</li>
+          <li>The Prince's Trust</li>
+          <li class="mono">COS</li>
+          <li class="serif">ASOS</li>
         </ul>
       </section>
 
@@ -154,8 +128,7 @@
         <div class="page">
           <div class="graphic-head grid">
             <h2 class="label" id="h-graphic">Graphic<span>Experimental &amp; print</span></h2>
-            <div class="label">Off the clock<span>Posters, type and image-making outside product work</span></div>
-            <div class="label">Instagram<span>Updated regularly</span></div>
+          </div>
           </div>
           <a class="handle" href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener">@anorthernboy_____</a>
           <ul class="feed">
@@ -172,32 +145,27 @@
 
     </main>
 
-    <footer class="site-foot grid" style="padding-top: clamp(96px, 12vw, 180px);">
-      <div class="big">Let's talk.<br><a href="pages/contact.html">Get in touch</a></div>
-      <div class="meta label">Manchester, UK<span>53°28′N 2°14′W</span></div>
-      <div class="base mono"><span>a northern boy</span><span>© 2026</span></div>
+    <footer class="hello grid" id="hello">
+      <h2>Connect, collaborate,<br>or just say hello <a href="mailto:craigweighman@gmail.com">craigweighman@gmail.com</a></h2>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/craigweighman/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <div class="base mono" style="grid-column: 1 / -1; display: flex; justify-content: space-between; border-top: 1px solid var(--rule); padding-top: 10px; color: var(--ink-soft);"><span>a northern boy</span><span>© 2026</span></div>
     </footer>
 
   </div>
 
-  <div class="peek" aria-hidden="true"><img alt=""></div>
-
   <script>
     (function () {
-      var peek = document.querySelector('.peek');
-      var img = peek.querySelector('img');
-      if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
-      var x = 0, y = 0, raf = 0;
-      function place() { raf = 0; peek.style.left = x + 'px'; peek.style.top = y + 'px'; }
-      document.querySelectorAll('.index-row[data-peek]').forEach(function (row) {
-        row.addEventListener('mouseenter', function () { img.src = row.dataset.peek; peek.classList.add('on'); });
-        row.addEventListener('mouseleave', function () { peek.classList.remove('on'); });
-        row.addEventListener('mousemove', function (e) {
-          x = Math.min(e.clientX + 40 + peek.offsetWidth / 2, window.innerWidth - peek.offsetWidth / 2 - 16);
-          y = e.clientY;
-          if (!raf) raf = requestAnimationFrame(place);
-        });
-      });
+      var el = document.getElementById('clock');
+      function tick() {
+        var d = new Date();
+        var day = d.toLocaleDateString('en-GB', { timeZone: 'Europe/London', day: 'numeric', month: 'short' });
+        var t = d.toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit' });
+        el.textContent = day + ' — ' + t + ' Manchester, UK';
+      }
+      tick(); setInterval(tick, 30000);
     })();
   </script>
 </body>
