@@ -21,107 +21,98 @@
   <div class="page">
 
     <header class="site-head grid">
-      <div class="who">
-        <a class="wordmark" href="./" aria-current="page">a northern boy</a>
-        <span class="clock" id="clock">Manchester, UK</span>
-      </div>
+      <a class="wordmark" href="./" aria-current="page">a northern boy</a>
       <nav class="nav" aria-label="Main">
         <a href="pages/about.html">about</a>
         <a href="#work">work</a>
         <a href="pages/projects.html">projects</a>
-        <a href="#hello">contact</a>
+        <a href="#contact">contact</a>
       </nav>
     </header>
 
     <main>
 
-      <section class="h2-hero grid">
-        <div class="copy">
-          <h1>Designer <span class="g">taking digital products from</span> research <span class="g">to</span> release<span class="dot">.</span></h1>
-          <p>Design-led product generalist with over ten years in product, leading eCommerce from the first question to the final QA pass.</p>
+      <section class="home-hero">
+        <div class="hero-meta grid">
+          <div class="label">Craig Weighman<span>Product designer</span></div>
+          <div class="label">Practice<span>UX to UI to release</span></div>
+          <div class="label">Local time<span id="clock">Manchester, UK</span></div>
+          <div class="label">Status<span class="status">Open to new roles</span></div>
         </div>
-        <div class="ph portrait" data-label="Portrait / 4:5" role="img" aria-label="Portrait of Craig (placeholder)"></div>
-      </section>
-
-      <div class="ph feature" data-label="Featured work, Reigning Champ / 21:9" role="img" aria-label="Featured work (placeholder)"></div>
-
-      <section class="row2 grid" aria-labelledby="h-info">
-        <h2 class="label" id="h-info">Info</h2>
-        <div class="body">
-          <p>I'm Craig Weighman, a designer based in Manchester. I've worked across eCommerce, SaaS and tech for good, as both designer and product manager.</p>
-          <a class="more" href="pages/about.html">More about me</a>
+        <div class="home-mark-wrap grid">
+          <h1 class="home-mark"><span class="l1">a northern</span> <span class="l2">boy</span></h1>
+          <p class="home-intro">Designer taking digital products from research to release, <em>and sweating the last ten percent.</em></p>
         </div>
       </section>
 
-      <section class="row2 grid" aria-labelledby="h-do">
-        <h2 class="label" id="h-do">What I do</h2>
-        <div class="body" style="grid-column: 1 / -1;">
-          <ol class="services">
-            <li>
-              <svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="24" cy="24" r="14"/><path d="M34 34 L48 48"/></svg>
-              <h3>Research</h3>
-              <b>Understand first.</b>
-              <p>Interviews, surveys and analytics that find the real problem.</p>
-            </li>
-            <li>
-              <svg viewBox="0 0 56 56" aria-hidden="true"><rect x="8" y="8" width="40" height="40"/><path d="M8 20 H48 M20 20 V48"/></svg>
-              <h3>UX / UI</h3>
-              <b>Clear, calm, considered.</b>
-              <p>Flows and interfaces that feel simple to use.</p>
-            </li>
-            <li>
-              <svg viewBox="0 0 56 56" aria-hidden="true"><rect x="6" y="6" width="18" height="18"/><rect x="32" y="6" width="18" height="18"/><rect x="6" y="32" width="18" height="18"/><circle cx="41" cy="41" r="9"/></svg>
-              <h3>Design systems</h3>
-              <b>Built to scale.</b>
-              <p>Components that help teams ship faster and stay consistent.</p>
-            </li>
-            <li>
-              <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M6 44 L20 28 L30 36 L48 14"/><path d="M38 14 H48 V24"/></svg>
-              <h3>Product</h3>
-              <b>From roadmap to release.</b>
-              <p>Priorities, delivery and QA, measured after launch.</p>
-            </li>
-          </ol>
+      <section class="section" aria-labelledby="h-info">
+        <div class="section-rule grid">
+          <h2 class="section-head label" id="h-info">Info<span>In brief</span></h2>
+          <div class="section-body">
+            <p class="intro-line">I'm Craig, a design-led product generalist based in Manchester, with over ten years in product across eCommerce, SaaS and tech for good.</p>
+            <a class="more" href="pages/about.html">More about me</a>
+          </div>
         </div>
       </section>
 
-      <section class="row2 grid" id="work" aria-labelledby="h-work">
-        <h2 class="label" id="h-work">Work</h2>
-        <div class="body">
-          <p>Three case studies across eCommerce and SaaS.</p>
-          <a class="more" href="pages/projects.html">View all projects</a>
+      <section class="section" aria-labelledby="h-do">
+        <div class="section-rule grid">
+          <h2 class="section-head label" id="h-do">What I do<span>Four things, done well</span></h2>
+          <div class="section-body">
+            <ol class="steps do-list">
+              <li><h3>Research</h3><p>Find the real problem first.</p></li>
+              <li><h3>UX / UI</h3><p>Clear, calm, considered interfaces.</p></li>
+              <li><h3>Design systems</h3><p>Built to scale and ship faster.</p></li>
+              <li><h3>Product</h3><p>Roadmap, delivery and QA.</p></li>
+            </ol>
+          </div>
         </div>
-        <ul class="tiles" style="grid-column: 1 / -1;">
-          <li class="tile">
-            <a class="cover-link" href="pages/reigning-champ.html" aria-label="Reigning Champ"></a>
-            <div class="img ph" data-label="Reigning Champ / 4:5"></div>
-            <h3>Reigning Champ</h3>
-            <span>eCommerce, Shopify</span>
-          </li>
-          <li class="tile">
-            <a class="cover-link" href="pages/avalanche-insights.html" aria-label="Avalanche Insights"></a>
-            <div class="img"><img src="assets/home/av-summary.webp" alt="" loading="lazy"></div>
-            <h3>Avalanche Insights</h3>
-            <span>SaaS, Research</span>
-          </li>
-          <li class="tile">
-            <a class="cover-link" href="pages/avalanche-analysis.html" aria-label="Avalanche Analysis"></a>
-            <div class="img"><img src="assets/home/av-explore.webp" alt="" loading="lazy"></div>
-            <h3>Avalanche Analysis</h3>
-            <span>Design sprint, AI</span>
-          </li>
-        </ul>
       </section>
 
-      <section class="clients" aria-label="Where I've worked">
-        <ul>
-          <li>Reigning Champ</li>
-          <li class="mono">Avalanche Insights</li>
-          <li class="serif">The GoodBox Co</li>
-          <li>The Prince's Trust</li>
-          <li class="mono">COS</li>
-          <li class="serif">ASOS</li>
-        </ul>
+      <section class="section" id="work" aria-labelledby="h-work">
+        <div class="section-rule grid">
+          <h2 class="section-head label" id="h-work">Work<span><a href="pages/projects.html">View all projects →</a></span></h2>
+          <div class="section-body">
+            <ol class="index lean">
+              <li class="index-row">
+                <a class="cover-link" href="pages/reigning-champ.html" aria-label="Reigning Champ"></a>
+                <span class="yr mono">2023 – Now</span>
+                <h3>Reigning Champ</h3>
+                <div class="line"><span class="tags">eCommerce · Shopify</span></div>
+              </li>
+              <li class="index-row" data-peek="assets/home/av-summary.webp">
+                <a class="cover-link" href="pages/avalanche-insights.html" aria-label="Avalanche Insights"></a>
+                <span class="yr mono">2021 – 2022</span>
+                <h3>Avalanche Insights</h3>
+                <div class="line"><span class="tags">SaaS · Research</span></div>
+                <div class="thumb"><img src="assets/home/av-summary.webp" alt="" loading="lazy"></div>
+              </li>
+              <li class="index-row" data-peek="assets/home/av-explore.webp">
+                <a class="cover-link" href="pages/avalanche-analysis.html" aria-label="Avalanche Analysis"></a>
+                <span class="yr mono">2022</span>
+                <h3>Avalanche Analysis</h3>
+                <div class="line"><span class="tags">Design sprint · AI</span></div>
+                <div class="thumb"><img src="assets/home/av-explore.webp" alt="" loading="lazy"></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="h-where">
+        <div class="section-rule grid">
+          <h2 class="section-head label" id="h-where">Worked with<span>2010 to now</span></h2>
+          <div class="section-body">
+            <ul class="worked">
+              <li>Reigning Champ</li>
+              <li>Avalanche Insights</li>
+              <li>The GoodBox Co</li>
+              <li>The Prince's Trust</li>
+              <li>COS</li>
+              <li>ASOS</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="graphic" id="graphic" aria-labelledby="h-graphic">
@@ -145,25 +136,42 @@
 
     </main>
 
-    <footer class="hello grid" id="hello">
-      <h2>Connect, collaborate,<br>or just say hello <a href="mailto:craigweighman@gmail.com">craigweighman@gmail.com</a></h2>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/craigweighman/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-      <div class="base mono" style="grid-column: 1 / -1; display: flex; justify-content: space-between; border-top: 1px solid var(--rule); padding-top: 10px; color: var(--ink-soft);"><span>a northern boy</span><span>© 2026</span></div>
+    <footer class="site-foot grid" id="contact" style="padding-top: clamp(96px, 12vw, 180px);">
+      <div class="big">Let's talk.<br><a href="mailto:craigweighman@gmail.com">Say hello</a><a class="email" href="mailto:craigweighman@gmail.com">craigweighman@gmail.com</a></div>
+      <div class="meta label">Elsewhere<span><a href="https://www.linkedin.com/in/craigweighman/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener">Instagram</a></span></div>
+      <div class="base mono"><span>a northern boy</span><span>© 2026</span></div>
     </footer>
 
   </div>
+
+  <div class="peek" aria-hidden="true"><img alt=""></div>
+
+  <script>
+    (function () {
+      var peek = document.querySelector('.peek');
+      var img = peek.querySelector('img');
+      if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      var x = 0, y = 0, raf = 0;
+      function place() { raf = 0; peek.style.left = x + 'px'; peek.style.top = y + 'px'; }
+      document.querySelectorAll('.index-row[data-peek]').forEach(function (row) {
+        row.addEventListener('mouseenter', function () { img.src = row.dataset.peek; peek.classList.add('on'); });
+        row.addEventListener('mouseleave', function () { peek.classList.remove('on'); });
+        row.addEventListener('mousemove', function (e) {
+          x = Math.min(e.clientX + 40 + peek.offsetWidth / 2, window.innerWidth - peek.offsetWidth / 2 - 16);
+          y = e.clientY;
+          if (!raf) raf = requestAnimationFrame(place);
+        });
+      });
+    })();
+  </script>
 
   <script>
     (function () {
       var el = document.getElementById('clock');
       function tick() {
         var d = new Date();
-        var day = d.toLocaleDateString('en-GB', { timeZone: 'Europe/London', day: 'numeric', month: 'short' });
         var t = d.toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit' });
-        el.textContent = day + ' — ' + t + ' Manchester, UK';
+        el.textContent = t + ', Manchester';
       }
       tick(); setInterval(tick, 30000);
     })();

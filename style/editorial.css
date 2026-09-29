@@ -792,3 +792,17 @@ img { max-width: 100%; display: block; }
   .hello h2 { grid-column: 1 / -1; }
   .hello h2 a { font-size: 0.62em; margin-top: 6px; overflow-wrap: anywhere; }
 }
+
+/* home v3: editorial layout, lean content */
+.intro-line { font-size: 17px; line-height: 1.5; margin: 0 0 14px; max-width: 46ch; }
+.do-list { margin-top: 0; }
+.do-list h3 { font-size: clamp(1.3rem, 1.9vw, 1.7rem); }
+.index.lean .index-row { align-items: baseline; }
+.index.lean .index-row .line { padding-top: 0.5em; }
+.worked { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 28px; }
+.worked li { font-family: var(--f-display); font-size: clamp(1.3rem, 2.2vw, 2rem); letter-spacing: -0.035em; line-height: 1.1; }
+.worked li:not(:last-child)::after { content: " /"; color: var(--rule); margin-left: 14px; }
+.site-foot .big .email { display: block; margin-top: 18px; font-size: 0.34em; letter-spacing: -0.03em; border: 0; color: var(--ink-soft); }
+.site-foot .big .email:hover { color: var(--signal); }
+.site-foot .meta a { color: var(--ink-soft); }
+.site-foot .meta a:hover { color: var(--signal); }
