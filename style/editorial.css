@@ -999,6 +999,8 @@ img { max-width: 100%; display: block; }
 /* desktop: sticky stack */
 @media (min-width: 961px) and (min-height: 620px) {
   .sw-item { position: sticky; top: calc(var(--navh) + var(--i) * var(--rowh)); }
+  /* earlier items carry extra height so the stack releases together when the last one lands */
+  .sw-item { padding-bottom: calc((var(--n) - 1 - var(--i)) * var(--rowh)); }
   .sw-item:last-child { margin-bottom: 0; }
   .sw-panel { --panelh: calc(100svh - var(--navh) - var(--n) * var(--rowh) - 8px); height: var(--panelh); }
   .sw-gal { --galh: calc(100svh - var(--navh) - var(--n) * var(--rowh) - 8px - 40px - 46px); }

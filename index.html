@@ -52,31 +52,6 @@
         <p class="hv-credits">Currently: <i>Reigning Champ</i>, Previously: <i>Avalanche Insights, The GoodBox Co, The Prince's Trust</i>, Practice: <i>research, UX/UI, design systems, product</i>, Based in: <i>Manchester, UK</i>. <a href="pages/about.html">More about me</a></p>
       </section>
 
-      <section class="hv-svc" aria-labelledby="h-svc">
-        <div class="hv-svc-head grid">
-          <div class="label" id="h-svc">What I do<span>Four disciplines</span></div>
-          <p class="word" aria-hidden="true">services</p>
-        </div>
-        <ol class="hv-cards">
-          <li class="hv-card">
-            <div class="hv-icon" aria-hidden="true">icon</div>
-            <div class="body"><h3>Research</h3><p>Interviews, surveys and analytics that find the real problem.</p></div>
-          </li>
-          <li class="hv-card">
-            <div class="hv-icon" aria-hidden="true">icon</div>
-            <div class="body"><h3>UX / UI</h3><p>Clear, calm interfaces that feel simple to use.</p></div>
-          </li>
-          <li class="hv-card">
-            <div class="hv-icon" aria-hidden="true">icon</div>
-            <div class="body"><h3>Design systems</h3><p>Components that help teams ship faster and stay consistent.</p></div>
-          </li>
-          <li class="hv-card">
-            <div class="hv-icon" aria-hidden="true">icon</div>
-            <div class="body"><h3>Product</h3><p>Roadmaps, delivery and QA, measured after launch.</p></div>
-          </li>
-        </ol>
-      </section>
-
       <section class="sw" id="work" aria-labelledby="h-work">
         <div class="sw-head grid">
           <div class="label">Selected work<span>2021 – 2026</span></div>
@@ -255,9 +230,9 @@
       function setVars() { section.style.setProperty('--navh', navh() + 'px'); }
 
       function stackTarget(i) {
-        var listTop = list.getBoundingClientRect().top + scrollY;
-        var h = items[0].offsetHeight;
-        return listTop + i * h - navh() - i * rowh();
+        var listTop = list.getBoundingClientRect().top + scrollY, before = 0;
+        for (var j = 0; j < i; j++) before += items[j].offsetHeight;
+        return listTop + before - navh() - i * rowh();
       }
       function setActive(i) {
         items.forEach(function (it, j) {
@@ -268,7 +243,7 @@
       function onScroll() {
         if (!stackMQ.matches) return;
         var y = scrollY, a = 0;
-        for (var i = 0; i < items.length; i++) { if (y >= stackTarget(i) - items[0].offsetHeight * 0.45) a = i; }
+        for (var i = 0; i < items.length; i++) { if (y >= stackTarget(i) - window.innerHeight * 0.4) a = i; }
         setActive(a);
       }
 
