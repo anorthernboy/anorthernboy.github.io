@@ -407,8 +407,9 @@ img { max-width: 100%; display: block; }
   display: block;
   margin-top: clamp(40px, 8vw, 110px);
   font-family: var(--f-display); font-weight: 500;
-  font-size: clamp(2.2rem, 9.6vw, 9.5rem); line-height: 0.85; letter-spacing: -0.06em;
-  overflow-wrap: anywhere;
+  /* sized so the full handle always fits one line: it measures ~8.6em wide */
+  font-size: min(9.5rem, calc((100vw - 2 * var(--gutter)) / 8.9)); line-height: 0.85; letter-spacing: -0.06em;
+  white-space: nowrap;
 }
 .handle:hover { color: var(--signal); }
 .feed { list-style: none; margin: clamp(32px, 5vw, 64px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
@@ -448,7 +449,6 @@ img { max-width: 100%; display: block; }
   .graphic-head .label:first-child,
   .graphic-head .label:nth-child(2),
   .graphic-head .label:nth-child(3) { grid-column: 1 / -1; text-align: left; }
-  .handle { font-size: 12.4vw; }
   .feed { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
@@ -1033,3 +1033,6 @@ img { max-width: 100%; display: block; }
 @media (prefers-reduced-motion: reduce) {
   .sw-panel-wrap, .sw-row .name, .sw-row .pm::before, .sw-row .pm::after { transition: none; }
 }
+
+/* sticky header paints edge to edge so dark sections don't show in the gutters */
+.site-head { box-shadow: 0 0 0 100vmax var(--paper); clip-path: inset(0 -100vmax); }
