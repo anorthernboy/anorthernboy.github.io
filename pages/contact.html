@@ -2,101 +2,90 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>contact</title>
+  <meta name="description" content="Contact Craig Weighman, designer and product lead in Manchester.">
 
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../favicon.png" type="image/png">
 
-  <title>avalanche insights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Geist+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
 
-  <script>
-
-    function reload() {
-      var perfEntries = performance.getEntriesByType("navigation");
-
-      if (window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // “Fear is the path to the Dark Side" - Yoda
-      }
-
-      if (perfEntries[0].type === "back_forward" || perfEntries[0].type === "reload") {
-        // location.reload(true);
-        window.scroll(0, 0);
-      }
-    }
-
-  </script>
-
+  <link rel="stylesheet" href="../style/editorial.css">
 </head>
 
-<body onload="reload()"
-  style="font-family: 'Open Sans', sans-serif; text-decoration: none; color: #333333; background-color: #FAFAFA;" >
+<body>
+  <div class="page">
 
-  <!--<div class="animation-screen"></div>-->
+    <header class="site-head grid">
+      <a class="wordmark" href="../">a northern boy</a>
+      <nav class="nav" aria-label="Main">
+        <a href="about.html">about</a>
+        <a href="../#work">work</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html" aria-current="page">contact</a>
+      </nav>
+    </header>
 
-<div class="container project-text fourth-section-slide"
-style="margin: 0px auto; display: flex; justify-content: center; align-items: center;  height: 100vh">
+    <main>
 
-<div class="row"
-  style="width: 100%; max-width: 1200px; margin: 15px; display: flex; justify-content: center; align-items: center;">
+      <section class="hv-hero grid" aria-label="Introduction">
+        <div class="tl label">Contact<span>Say hello</span></div>
+        <h1 class="hv-title">contact</h1>
+      </section>
 
-  <div id="nav-overview" class="col-12 column-twelve"
-    style="margin: 0 15px; padding:0px;overflow:hidden; position: relative; max-width: 1030px; display: flex; justify-content: center; align-items: center;">
+      <section class="hv-info" aria-label="Availability" style="padding-top: clamp(80px, 11vw, 160px);">
+        <p class="big">I'm open to new roles in product design and product management. Email is the quickest way to reach me, and I'll reply within a couple of days.</p>
+        <p class="hv-credits">Status: <i>open to new roles</i>, Based in: <i>Manchester, UK</i>.</p>
+      </section>
 
-    <div id="spotify-summary-content">
-      <!-- <br> -->
-      
-      <p style="font-size: 1.5rem; font-weight: 200; margin-bottom: 0rem;">
-          Craig Weighman
-        </p>
-      
-      <p style="font-size: 1.125rem; font-weight: 200; text-decoration: none; color: #707070;">
-        Product Designer & Creative Technologist
-        </p>
-      
-      <p  style="font-size: 1rem; font-weight: 100; margin-bottom: 0.5rem;">
-        w: anorthernboy.github.io        
-              </p>
-      
-      <p  style="font-size: 1rem; font-weight: 100; margin-bottom: 0.5rem;">
-                l: linkedin.com/craigweighman       
-                      </p>
-       
-      <p  style="font-size: 1rem; font-weight: 100; margin-bottom: 0.5rem;">
-e: craigweighman@gmail.com        
-      </p>
-      
-      <p  style="font-size: 1rem; font-weight: 100;">
-        m: +1 (604) 379-6672        
-              </p>
-              
+      <section class="ct" aria-label="Ways to get in touch">
+        <ul class="ct-list">
+          <li class="ct-row">
+            <span class="k">01 Email</span>
+            <a class="v" href="mailto:craigweighman@gmail.com" id="email">craigweighman@gmail.com</a>
+            <span class="act"><button type="button" id="copy">Copy</button></span>
+          </li>
+          <li class="ct-row">
+            <span class="k">02 LinkedIn</span>
+            <a class="v" href="https://www.linkedin.com/in/craigweighman/" target="_blank" rel="noopener">in/craigweighman</a>
+            <span class="act">↗</span>
+          </li>
+          <li class="ct-row">
+            <span class="k">03 Instagram</span>
+            <a class="v" href="https://www.instagram.com/anorthernboy_____/" target="_blank" rel="noopener">@anorthernboy_____</a>
+            <span class="act">↗</span>
+          </li>
+        </ul>
+      </section>
 
-    </div>
+    </main>
+
+    <footer class="site-foot grid ct-base">
+      <div class="base mono"><span>a northern boy</span><span>© 2026</span></div>
+    </footer>
 
   </div>
 
-</div>
-
-</div>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-</script>
-
+  <script>
+    (function () {
+      var btn = document.getElementById('copy'), email = document.getElementById('email');
+      btn.addEventListener('click', function () {
+        var text = email.textContent.trim();
+        function done() { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1800); }
+        function fallback() {
+          var r = document.createRange(); r.selectNodeContents(email);
+          var s = getSelection(); s.removeAllRanges(); s.addRange(r);
+          btn.textContent = 'Press ⌘C / Ctrl+C';
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fallback);
+        else fallback();
+      });
+    })();
+  </script>
 </body>
 
 </html>
-
